@@ -155,21 +155,36 @@ body {
 }
 
 
-/* ── Page number ── */
+/* ── Page number (auto-counted, non-overlapping) ── */
+body {
+  counter-reset: page-counter;
+}
+
+.book-page {
+  counter-increment: page-counter;
+}
+
 .page-number {
-  position: absolute;
-  bottom: 0.4in;
   font-family: var(--font-heading);
   font-size: var(--fs-sm);
   color: var(--ink-muted);
+  text-align: center;
+  margin-top: 12pt;
+  padding-top: 6pt;
 }
 
+/* Auto-number: hide hardcoded text, show counter */
+.page-number.auto::after {
+  content: counter(page-counter);
+}
+
+/* Legacy hardcoded page numbers: just fix positioning */
 .book-page.verso .page-number {
-  left: var(--page-margin-outer);
+  text-align: left;
 }
 
 .book-page.recto .page-number {
-  right: var(--page-margin-outer);
+  text-align: right;
 }
 
 
