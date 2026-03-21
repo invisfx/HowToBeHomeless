@@ -634,6 +634,28 @@ body {
 /* ═══════════════════════════════════════════════════════════════
    CROSS-REFERENCES
    ═══════════════════════════════════════════════════════════════ */
+/* ── Web addresses — highlighted for quick scanning ── */
+.web-url {
+  color: #1a6b8a;
+  font-weight: 600;
+  background: #e8f4f8;
+  padding: 0 3pt;
+  border-radius: 1.5pt;
+  font-size: 0.95em;
+  white-space: nowrap;
+}
+
+/* ── Phone numbers — highlighted for quick scanning ── */
+.phone-num {
+  color: #8a4e2a;
+  font-weight: 600;
+  background: #fdf3ed;
+  padding: 0 3pt;
+  border-radius: 1.5pt;
+  font-size: 0.95em;
+  white-space: nowrap;
+}
+
 .xref {
   font-family: var(--font-heading);
   font-size: var(--fs-sm);
