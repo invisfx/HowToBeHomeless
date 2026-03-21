@@ -63,7 +63,7 @@ function extractContent(html) {
   }
 
   // Extract page-content blocks
-  const contentBlocks = html.match(/<div class="page-content">([\s\S]*?)<\/div>\s*\n\s*<div class="page-number">/g);
+  const contentBlocks = html.match(/<div class="page-content">([\s\S]*?)<\/div>\s*\n\s*<div class="page-number[^"]*">/g);
   if (!contentBlocks) return elements;
 
   for (const block of contentBlocks) {
@@ -97,7 +97,7 @@ function extractContent(html) {
 
       // Skip empty lines and structural elements
       if (!line || line.startsWith('<div class="page-content">') || line.startsWith('</div>')) continue;
-      if (line.startsWith('<div class="page-number">')) continue;
+      if (line.startsWith('<div class="page-number')) continue;
       if (line.startsWith('<nav') || line.startsWith('</nav>') || line.startsWith('<a href=')) continue;
       if (line.startsWith('<span class="nav-')) continue;
       if (line.startsWith('<script')) continue;
