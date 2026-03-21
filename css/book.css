@@ -106,6 +106,8 @@ body {
   padding: var(--page-margin-top) var(--page-margin-outer) var(--page-margin-bottom) var(--page-margin-inner);
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Alternate left/right margin for recto/verso (even/odd) */
@@ -169,7 +171,7 @@ body {
   font-size: var(--fs-sm);
   color: var(--ink-muted);
   text-align: center;
-  margin-top: 12pt;
+  margin-top: auto;
   padding-top: 6pt;
 }
 
