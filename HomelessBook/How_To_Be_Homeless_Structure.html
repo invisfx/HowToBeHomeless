@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How To Be Homeless — Book Structure</title>
+<style>
+  :root {
+    --bg: #fafaf8;
+    --text: #1a1a1a;
+    --muted: #666;
+    --accent: #2E4057;
+    --border: #ddd;
+    --scenario-bg: #f0f0ec;
+    --psych-bg: #e4eaf1;
+    --gear-bg: #eef5ee;
+    --game-bg: #f5f0e8;
+    --toc-bg: #fff;
+    --sidebar-w: 280px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--text);
+    background: var(--bg);
+  }
+
+  /* ── SIDEBAR NAV ── */
+  .sidebar {
+    position: fixed;
+    top: 0; left: 0;
+    width: var(--sidebar-w);
+    height: 100vh;
+    overflow-y: auto;
+    background: #fff;
+    border-right: 1px solid var(--border);
+    padding: 24px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    z-index: 100;
+  }
+  .sidebar h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--muted);
+    margin: 20px 0 8px;
+  }
+  .sidebar h2:first-child { margin-top: 0; }
+  .sidebar a {
+    display: block;
+    color: var(--text);
+    text-decoration: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    line-height: 1.4;
+  }
+  .sidebar a:hover { background: #f0f0f0; }
+  .sidebar a.part {
+    font-weight: 700;
+    font-size: 13px;
+    margin-top: 4px;
+  }
+  .sidebar a.ch {
+    padding-left: 20px;
+    color: var(--muted);
+    font-size: 12.5px;
+  }
+  .sidebar .title-block {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 4px;
+    letter-spacing: -0.3px;
+  }
+  .sidebar .subtitle {
+    font-size: 11px;
+    color: var(--muted);
+    margin-bottom: 16px;
+  }
+
+  /* ── MAIN CONTENT ── */
+  .main {
+    margin-left: var(--sidebar-w);
+    max-width: 740px;
+    padding: 60px 48px 120px;
+  }
+
+  /* ── TITLE PAGE ── */
+  .title-page {
+    text-align: center;
+    padding: 120px 0 80px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 60px;
+  }
+  .title-page h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 12px;
+  }
+  .title-page .sub {
+    font-size: 20px;
+    color: var(--muted);
+    margin-bottom: 24px;
+  }
+  .title-page .author { font-size: 18px; }
+  .title-page .meta {
+    margin-top: 40px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  /* ── HEADINGS ── */
+  h1.part {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    margin: 80px 0 8px;
+    padding-top: 40px;
+    border-top: 3px solid var(--text);
+    letter-spacing: -0.5px;
+  }
+  h2.chapter {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 48px 0 6px;
+    color: var(--accent);
+  }
+  h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 32px 0 6px;
+  }
+  .part-subtitle, .ch-subtitle {
+    font-style: italic;
+    color: var(--muted);
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+  .est {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 20px;
+  }
+
+  p { margin-bottom: 14px; }
+  ul { margin: 8px 0 20px 28px; }
+  li { margin-bottom: 6px; }
+
+  /* ── SPECIAL BOXES ── */
+  .box {
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin: 24px 0;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .box .label {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+  }
+  .scenario { background: var(--scenario-bg); }
+  .scenario .label { color: #555; }
+  .psych { background: var(--psych-bg); }
+  .psych .label { color: var(--accent); }
+  .game { background: var(--game-bg); }
+  .game .label { color: #6b5a2e; }
+  .gear { background: var(--gear-bg); }
+  .gear .label { color: #2e6b3a; }
+
+  .box p:last-child { margin-bottom: 0; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    .sidebar { display: none; }
+    .main { margin-left: 0; padding: 32px 20px 80px; }
+    .title-page { padding: 60px 0 40px; }
+    .title-page h1 { font-size: 32px; }
+    h1.part { font-size: 26px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════ SIDEBAR ════════════════════════════════════════════ -->
+<nav class="sidebar">
+  <div class="title-block">How To Be Homeless</div>
+  <div class="subtitle">Book Structure &middot; Working Draft</div>
+
+  <h2>Front Matter</h2>
+  <a href="#about">About This Book</a>
+  <a href="#psychology-note">About the Psychology</a>
+
+  <h2>Part I</h2>
+  <a class="part" href="#p1">Before the Street</a>
+  <a class="ch" href="#ch1">1. Triage</a>
+  <a class="ch" href="#ch2">2. The Go-Bag</a>
+  <a class="ch" href="#ch3">3. Prepositioning</a>
+
+  <h2>Part II</h2>
+  <a class="part" href="#p2">The First 72 Hours</a>
+  <a class="ch" href="#ch4">4. Night One</a>
+  <a class="ch" href="#ch5">5. Orientation</a>
+
+  <h2>Part III</h2>
+  <a class="part" href="#p3">Shelter</a>
+  <a class="ch" href="#ch6">6. The Shelter System</a>
+  <a class="ch" href="#ch7">7. Vehicle Living</a>
+  <a class="ch" href="#ch8">8. Outside</a>
+  <a class="ch" href="#ch9">9. Couch Surfing</a>
+
+  <h2>Part IV</h2>
+  <a class="part" href="#p4">Basic Needs</a>
+  <a class="ch" href="#ch10">10. Food</a>
+  <a class="ch" href="#ch11">11. Water &amp; Hygiene</a>
+  <a class="ch" href="#ch12">12. Sleep</a>
+
+  <h2>Part V</h2>
+  <a class="part" href="#p5">Money, Work &amp; Systems</a>
+  <a class="ch" href="#ch13">13. Income</a>
+  <a class="ch" href="#ch14">14. Benefits &amp; Services</a>
+  <a class="ch" href="#ch15">15. Panhandling &amp; the Ask</a>
+  <a class="ch" href="#ch16">16. Legal Survival</a>
+
+  <h2>Part VI</h2>
+  <a class="part" href="#p6">Health &amp; Safety</a>
+  <a class="ch" href="#ch17">17. Physical Health</a>
+  <a class="ch" href="#ch18">18. Mental Health</a>
+  <a class="ch" href="#ch19">19. Violence &amp; Predation</a>
+  <a class="ch" href="#ch20">20. Population-Specific Risks</a>
+
+  <h2>Part VII</h2>
+  <a class="part" href="#p7">The Phone Is Everything</a>
+  <a class="ch" href="#ch21">21. Keeping It Alive</a>
+  <a class="ch" href="#ch22">22. Phone as Survival Tool</a>
+
+  <h2>Part VIII</h2>
+  <a class="part" href="#p8">Gear &amp; Equipment</a>
+  <a class="ch" href="#ch23">23. The Survival Kit</a>
+  <a class="ch" href="#ch24">24. Water, Power &amp; Heat</a>
+  <a class="ch" href="#ch25">25. Urban Improvisation</a>
+
+  <h2>Part IX</h2>
+  <a class="part" href="#p9">The Way Out</a>
+  <a class="ch" href="#ch26">26. Prioritizing the Exit</a>
+  <a class="ch" href="#ch27">27. Getting Back into Housing</a>
+  <a class="ch" href="#ch28">28. Staying Housed</a>
+
+  <h2>Part X</h2>
+  <a class="part" href="#p10">Location Profiles</a>
+  <a class="ch" href="#ch29">29. Climate Zones</a>
+  <a class="ch" href="#ch30">30. Legal Landscapes</a>
+
+  <h2>Part XI</h2>
+  <a class="part" href="#p11">The Inner Game</a>
+  <a class="ch" href="#ch31">31. Your Brain</a>
+  <a class="ch" href="#ch32">32. Identity Under Siege</a>
+  <a class="ch" href="#ch33">33. The Traps</a>
+  <a class="ch" href="#ch34">34. The Resilience Playbook</a>
+
+  <h2>Back Matter</h2>
+  <a href="#appendices">Appendices A&ndash;F</a>
+  <a href="#design">Design Notes</a>
+</nav>
+
+<!-- ════════════════════════════════════════════ MAIN ════════════════════════════════════════════ -->
+<div class="main">
+
+<!-- ─── TITLE ─── -->
+<div class="title-page">
+  <h1>HOW TO BE HOMELESS</h1>
+  <div class="sub">A Practical Survival Guide</div>
+  <div class="author">by Doug Addy</div>
+  <div class="meta">Book Structure &amp; Table of Contents<br>Working Draft &mdash; March 2026</div>
+</div>
+
+<!-- ─── ABOUT ─── -->
+<h1 class="part" id="about">About This Book</h1>
+
+<p>This book is written for you. Not about you. Not for the people who study you, pity you, or make policy about you. For you.</p>
+
+<p>If you are homeless right now, or about to be, this is your field manual. It covers the practical logistics of surviving without permanent shelter &mdash; and eventually getting back to stable housing. It is organized so you can read it front to back or jump to whatever chapter matches your crisis.</p>
+
+<h3>Who This Book Is For</h3>
+<ul>
+  <li>People currently experiencing homelessness</li>
+  <li>People who can see homelessness coming (eviction, job loss, fleeing abuse)</li>
+  <li>People living in vehicles, couch-surfing, or in unstable housing</li>
+  <li>Social workers, outreach teams, and advocates who want to understand the lived reality</li>
+  <li>Family and friends trying to help someone in crisis</li>
+</ul>
+
+<h3>How to Use This Book</h3>
+<p>The book is organized in roughly chronological order &mdash; from the moment you realize you might lose housing, through the acute crisis, into stabilization, and eventually toward getting housed again. But homelessness is not linear, so every chapter is designed to stand alone.</p>
+<ul>
+  <li>If you are about to lose housing: start with Part I</li>
+  <li>If you are already on the street: skip to Part II or III</li>
+  <li>If you need help with a specific problem (food, safety, ID, income): go to the relevant chapter</li>
+  <li>If you are ready to transition back to housing: go to Part IX</li>
+</ul>
+
+<h3>A Note on Tone</h3>
+<p>This book treats you as a capable adult solving a logistics problem. It does not moralize about how you got here. It does not assume you are broken. It assumes you are resourceful, under pressure, and short on time. The advice is direct, sometimes blunt, and always practical.</p>
+
+<h3 id="psychology-note">About the Psychology in This Book</h3>
+<p>This book includes <strong>psychology sidebars</strong> throughout &mdash; short boxes marked <em>YOUR BRAIN RIGHT NOW</em>. These are not therapy. They are field intelligence. They explain what homelessness does to your cognition, decision-making, and sense of self, based on published research from Mullainathan and Shafir (scarcity and cognitive bandwidth), Seligman (learned helplessness), Snow and Anderson (identity under extreme conditions), and others.</p>
+<p>It also includes <strong>game theory sidebars</strong> &mdash; boxes marked <em>THE GAME</em> &mdash; that frame specific survival situations as strategic interactions. Homelessness is full of repeated games with other people: police, shelter staff, other homeless people, the public. Understanding the incentive structures helps you play smarter.</p>
+<p>The purpose is simple: if you understand why your brain is doing something, or why another person is acting the way they are, you can make better decisions under worse conditions.</p>
+
+
+<!-- ══════════════════════════════════════════════════════════════════════════════════════════════ -->
+<!-- PART I -->
+<!-- ══════════════════════════════════════════════════════════════════════════════════════════════ -->
+<h1 class="part" id="p1">PART I: BEFORE THE STREET</h1>
+<div class="part-subtitle">For people who can see it coming. This window is your biggest advantage &mdash; use it.</div>
+<div class="est">Estimated length: 25&ndash;35 pages</div>
+
+<h2 class="chapter" id="ch1">Chapter 1: Triage</h2>
+<div class="ch-subtitle">Assessing your situation, timeline, and options before you lose the roof.</div>
+<ul>
+  <li>How much time do you actually have? (eviction timelines vary by state)</li>
+  <li>Financial triage: what to pay, what to let go, in what order</li>
+  <li>The sunk cost trap &mdash; when fighting to keep housing costs more than letting go</li>
+  <li>Mapping your resources: people, money, skills, geography</li>
+  <li>Decision tree: shelter, vehicle, couch, or outside?</li>
+</ul>
+
+<div class="box psych">
+  <div class="label">&#x25B6; Your Brain Right Now: The Scarcity Tax</div>
+  <p>Research by Mullainathan and Shafir (Harvard/Princeton) found that financial scarcity consumes cognitive bandwidth equivalent to losing 13 IQ points. You are not getting dumber &mdash; your brain is allocating resources to the crisis, leaving less for everything else. Knowing this changes how you triage: simplify decisions, write things down, do not trust your memory right now.</p>
+</div>
+
+<h2 class="chapter" id="ch2">Chapter 2: The Go-Bag</h2>
+<div class="ch-subtitle">What to take, what to leave, and what to get before you lose access.</div>
+<ul>
+  <li>The non-negotiable documents: ID, Social Security card, birth certificate, medical records</li>
+  <li>What to do RIGHT NOW if you do not have ID (it is catastrophically hard to replace later)</li>
+  <li>Packing for survival vs. packing for dignity &mdash; why both matter</li>
+  <li>Where to store what you cannot carry (storage units, trusted people, hidden caches)</li>
+  <li>Selling possessions strategically: what has value, what does not, and where to sell</li>
+  <li>The phone setup: charging gear, essential apps, backup plan</li>
+</ul>
+
+<h2 class="chapter" id="ch3">Chapter 3: Prepositioning</h2>
+<div class="ch-subtitle">Scouting resources before you need them desperately.</div>
+<ul>
+  <li>Locating shelters, food banks, clinics, and day centers in your area NOW</li>
+  <li>Establishing relationships with caseworkers before crisis hits</li>
+  <li>Applying for benefits while you still have an address (SNAP, Medicaid, GA)</li>
+  <li>Telling the right people vs. telling nobody &mdash; who actually helps, who makes it worse</li>
+  <li>If you have kids: school stability rights (McKinney-Vento Act), custody concerns</li>
+  <li>If you have pets: the complication nobody talks about</li>
+</ul>
+
+<div class="box game">
+  <div class="label">&#x265F; The Game: Information Asymmetry</div>
+  <p>Before you lose housing, you have an information advantage over the systems you will need. You can research shelters, learn eligibility rules, and preposition resources while you still have internet, a mailing address, and cognitive bandwidth. Once you are in crisis, every bureaucratic interaction becomes a blind negotiation. The caseworker knows the rules; you do not. Preposition now: learn what you qualify for, what documentation you need, and who the gatekeepers are. This is the last moment where the information asymmetry favors you.</p>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════════════════════════════════════════ -->
+<!-- PART II -->
+<!-- ══════════════════════════════════════════════════════════════════════════════════════════════ -->
+<h1 class="part" id="p2">PART II: THE FIRST 72 HOURS</h1>
+<div class="part-subtitle">The most dangerous and disorienting window. Survival decisions made here shape everything.</div>
+<div class="est">Estimated length: 20&ndash;25 pages</div>
+
+<h2 class="chapter" id="ch4">Chapter 4: Night One</h2>
+<div class="ch-subtitle">You have nowhere to sleep tonight. Here is what to do.</div>
+<ul>
+  <li>Do not panic-spend your last cash</li>
+  <li>Immediate shelter options ranked by safety and accessibility</li>
+  <li>How to find and enter a shelter tonight (and what to expect)</li>
+  <li>If the shelters are full: backup options by city type</li>
+  <li>Your phone is at 12% &mdash; triage your battery for maximum survival value</li>
+  <li>Reading your environment: safe blocks vs. dangerous blocks</li>
+</ul>
+
+<div class="box psych">
+  <div class="label">&#x25B6; Your Brain Right Now: Acute Stress and Tunnel Vision</div>
+  <p>In the first 72 hours, your brain enters threat-detection mode. Cortisol floods your system. You will hyperfocus on immediate danger and lose the ability to plan ahead. This is normal &mdash; it is your survival system working. But it means you will make short-term decisions that feel right and are wrong. Force yourself to pause before spending money or trusting anyone. Write down your plan, even three bullet points. Your future self will thank your present self.</p>
+</div>
+
+<div class="box scenario">
+  <div class="label">Scenario: Phoenix, August. $40. No ID. Phone dying.</div>
+  <p>A scenario interlude walking through real decision-making in extreme heat with minimal resources. Covers finding shade, water, cooling centers, and overnight strategy when shelters are at capacity.</p>
+</div>
+
+<h2 class="chapter" id="ch5">Chapter 5: Orientation</h2>
+<div class="ch-subtitle">Learning the landscape of your new reality.</div>
+<ul>
+  <li>The first 72 hours as a learning sprint &mdash; mapping services, routes, safe zones</li>
+  <li>How homeless infrastructure actually works: shelters, outreach, day centers</li>
+  <li>Who to approach and who to avoid (staff, other homeless people, housed people)</li>
+  <li>The unwritten rules of each environment &mdash; camps, shelters, public spaces</li>
+  <li>Setting up your survival routine: wake, hygiene, food, charge, next</li>
+</ul>
+
+<div class="box game">
+  <div class="label">&#x265F; The Game: Signaling and First Impressions</div>
+  <p>Your first interactions in a shelter, camp, or day center set your position for weeks. Game theory calls this <em>signaling</em> &mdash; the information you broadcast through behavior, appearance, and language tells others whether you are a target, an ally, or someone to leave alone. You do not need to be aggressive. You need to be legible: calm, aware, and not visibly desperate. People who signal competence attract better allies and fewer predators. This is not about performing toughness. It is about not broadcasting vulnerability.</p>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════════════════════════════════════════ -->
+<!-- PART III -->
+<!-- ══════════════════════════════════════════════════════════════════════════════════════════════ -->
+<h1 class="part" id="p3">PART III: SHELTER</h1>
+<div class="part-subtitle">Where you sleep determines everything else. This section covers every option.</div>
+<div class="est">Estimated length: 40&ndash;50 pages</div>
+
+<h2 class="chapter" id="ch6">Chapter 6: The Shelter System</h2>
+<div class="ch-subtitle">How it works, how to get in, and how to survive inside.</div>
+<ul>
+  <li>Types of shelters: emergency, transitional, specialized (DV, family, veteran, youth)</li>
+  <li>The intake process: what to expect, what to say, what not to say</li>
+  <li>Shelter rules and culture &mdash; the ones they tell you and the ones they do not</li>
+  <li>Protecting your belongings inside a shelter</li>
+  <li>When a shelter is unsafe and how to leave without burning the bridge</li>
+  <li>Shelter waitlists: how to get on them, how to stay on them</li>
+</ul>
+
+<div class="box psych">
+  <div class="label">&#x25B6; Your Brain Right Now: Identity Distancing</div>
+  <p>Researchers Snow and Anderson found that people in shelters use three identity strategies: distancing ("I am not like the others here"), embracement (accepting a homeless identity), and fictive storytelling (constructing an alternative narrative). Distancing is the most common early response, and it is protective &mdash; it preserves your sense of self. But it can also isolate you from the very people who understand your situation best. Notice which strategy you are using. There is no wrong answer, but awareness gives you choice.</p>
+</div>
+
+<h2 class="chapter" id="ch7">Chapter 7: Vehicle Living</h2>
+<div class="ch-subtitle">Your car is the best shelter you can have. Here is how to make it work.</div>
+<ul>
+  <li>Setup: sleeping configuration, storage, light discipline, climate management</li>
+  <li>Where to park: safe locations, rotation strategy, staying under the radar</li>
+  <li>Legal considerations: overnight parking laws, vehicle dwelling ordinances</li>
+  <li>Hygiene, cooking, and daily routine from a vehicle</li>
+  <li>Maintaining the vehicle itself &mdash; when your shelter is also a machine</li>
+  <li>The line between car living and car failure: what happens when the car breaks</li>
+</ul>
+
+<div class="box scenario">
+  <div class="label">Scenario: Portland, November. Living in a 2009 Civic. It has been raining for 11 days.</div>
+  <p>Covers condensation management, staying warm without running the engine, keeping employment while car-dwelling, and the psychological toll of relentless wet cold.</p>
+</div>
+
+<h2 class="chapter" id="ch8">Chapter 8: Outside</h2>
+<div class="ch-subtitle">Tent camping, rough sleeping, and surviving without walls.</div>
+<ul>
+  <li>Urban camping: where it is tolerated, where it gets you arrested</li>
+  <li>Camp setup: tent, tarp, sleeping bag &mdash; what matters and what does not</li>
+  <li>The Grants Pass reality: post-2024 legal landscape for outdoor sleeping</li>
+  <li>Encampment dynamics: joining an existing camp vs. going solo</li>
+  <li>Rural and wilderness camping as a homelessness strategy &mdash; the hidden population</li>
+  <li>The sweep: what happens when they clear your camp, and how to prepare</li>
+</ul>
+
+<div class="box game">
+  <div class="label">&#x265F; The Game: Camp Politics &mdash; Repeated Games and Cooperation</div>
+  <p>An encampment is a repeated game: the same players interact daily, which changes optimal strategy. In a one-shot interaction, defection (theft, freeloading) may pay. In a repeated game, <em>tit-for-tat</em> dominates &mdash; cooperate first, then mirror what others do. Camps that survive develop informal enforcement: shared watch schedules, contribution norms, expulsion of bad actors. When joining a camp, your first move should be cooperation (offer to watch someone's stuff, share a resource). This establishes reciprocity. But also: be willing to leave camps where defection is the norm. You cannot fix a broken equilibrium alone.</p>
+</div>
+
+<h2 class="chapter" id="ch9">Chapter 9: Couch Surfing and Doubling Up</h2>
+<div class="ch-subtitle">The invisible homelessness.</div>
+<ul>
+  <li>How to ask for help without destroying relationships</li>
+  <li>Setting expectations: timeline, contribution, boundaries</li>
+  <li>When to leave before you are asked to leave</li>
+  <li>The danger of trading housing for control (especially for women and youth)</li>
+  <li>HUD definition vs. lived reality &mdash; why couch surfers often cannot access services</li>
+</ul>
+
+
+<!-- ══════════════════════════════════════════════════════════════════════════════════════════════ -->
+<!-- PART IV -->
+<!-- ══════════════════════════════════════════════════════════════════════════════════════════════ -->
+<h1 class="part" id="p4">PART IV: BASIC NEEDS</h1>
+<div class="part-subtitle">Food, water, hygiene, and sleep. The daily grind of staying alive and functional.</div>
+<div class="est">Estimated length: 35&ndash;45 pages</div>
+
+<h2 class="chapter" id="ch10">Chapter 10: Food</h2>
+<ul>
+  <li>Food banks, soup kitchens, meal programs &mdash; how to find them, when they operate</li>
+  <li>Stretching cash on food: what to buy, where to buy it</li>
+  <li>SNAP benefits: how to apply without an address, how to maintain them</li>
+  <li>Eating with dignity &mdash; nutrition matters more when your margin is zero</li>
+  <li>Dumpster diving: the honest reality, the risks, the law</li>
+</ul>
+
+<h2 class="chapter" id="ch11">Chapter 11: Water and Hygiene</h2>
+<ul>
+  <li>Clean water sources in every type of environment</li>
+  <li>The gym membership strategy (Planet Fitness as shower infrastructure)</li>
+  <li>Hygiene without facilities: the practical logistics</li>
+  <li>Laundry on almost no money</li>
+  <li>Dental and medical hygiene &mdash; what falls apart first and why it matters</li>
+</ul>
+
+<h2 class="chapter" id="ch12">Chapter 12: Sleep</h2>
+<div class="ch-subtitle">Sleep deprivation is the silent killer of homeless survival.</div>
+<ul>
+  <li>Why sleep is your most critical need after immediate safety</li>
+  <li>Safe sleeping strategies: locations, positions, timing</li>
+  <li>Sleeping in shifts with a trusted partner</li>
+  <li>The insomnia cycle: stress kills sleep, which amplifies stress</li>
+  <li>Sleep as a strategic resource &mdash; when to prioritize it over everything else</li>
+</ul>
+
+<div class="box psych">
+  <div class="label">&#x25B6; Your Brain Right Now: Executive Function and Sleep</div>
+  <p>Research shows that working memory span &mdash; your ability to hold and process information &mdash; predicts housing outcomes. People with better working memory are twice as likely to progress to independent housing. Sleep deprivation directly degrades working memory. This means every night of bad sleep makes it harder to fill out forms, keep appointments, and make the decisions that get you off the street. Sleep is not a luxury. It is infrastructure.</p>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════════════════════════════════════════ -->
+<!-- PART V -->
+<!-- ══════════════════════════════════════════════════════════════════════════════════════════════ -->
+<h1 class="part" id="p5">PART V: MONEY, WORK, AND SYSTEMS</h1>
+<div class="part-subtitle">Income, benefits, and navigating the bureaucracies that control access to help.</div>
+<div class="est">Estimated length: 40&ndash;50 pages</div>
+
+<h2 class="chapter" id="ch13">Chapter 13: Income Without an Address</h2>
+<ul>
+  <li>Day labor, gig work, plasma donation, recycling &mdash; fast cash options ranked</li>
+  <li>Receiving money without a bank account: prepaid cards, Cash App, direct deposit workarounds</li>
+  <li>Maintaining employment while homeless &mdash; the hidden logistics</li>
+  <li>The appearance problem: interview clothes, grooming, address on applications</li>
+</ul>
+
+<div class="box scenario">
+  <div class="label">Scenario: Chicago, February. Job interview at 9am. Slept at a warming center. Suit is wrinkled.</div>
+  <p>Covers morning routine without a home base, presenting professionally while unhoused, the logistics of carrying interview clothes, and the mental game of code-switching between survival mode and professional mode.</p>
+</div>
+
+<h2 class="chapter" id="ch14">Chapter 14: Benefits and Services</h2>
+<ul>
+  <li>What you likely qualify for and how to apply: SNAP, Medicaid, SSI/SSDI, GA, Section 8</li>
+  <li>The mailing address problem &mdash; solutions that actually work</li>
+  <li>Caseworkers: how to get one, how to work with them, how to advocate for yourself</li>
+  <li>Navigating the bureaucracy without losing your mind &mdash; practical strategies</li>
+  <li>Veterans: VA services, SSVF, HUD-VASH (expanded section)</li>
+</ul>
+
+<div class="box psych">
+  <div class="label">&#x25B6; Your Brain Right Now: Learned Helplessness</div>
+  <p>Psychologist Martin Seligman discovered that when repeated efforts to improve a situation fail, the brain learns to stop trying &mdash; even when new options appear. If you have applied for benefits and been denied, called numbers that went nowhere, or waited months for a callback that never came, your brain may have quietly concluded that trying is pointless. Recognize this for what it is: a neurological adaptation, not the truth. The system is broken in specific ways, and knowing which doors are actually closed vs. which ones your brain has preemptively shut is the difference between stagnation and exit.</p>
+</div>
+
+<!-- ─── NEW: PANHANDLING CHAPTER ─── -->
+<h2 class="chapter" id="ch15">Chapter 15: Panhandling and the Psychology of the Ask</h2>
+<div class="ch-subtitle">The most stigmatized income source, broken down as a skill with real behavioral psychology behind it.</div>
+<ul>
+  <li>The honest economics of panhandling: what it pays, when, and where</li>
+  <li>Location theory: foot traffic, visibility, exit routes, competition</li>
+  <li>Signage: what works and what does not &mdash; specificity beats vagueness</li>
+  <li>The psychology of giving: why people give and what triggers it</li>
+  <li>Eye contact, posture, and presence &mdash; behavioral cues that increase or decrease giving</li>
+  <li>Gender, race, and age dynamics: the unequal playing field</li>
+  <li>The emotional cost: shame management and identity protection while asking</li>
+  <li>Legal landscape: where panhandling is protected speech, where it gets you cited</li>
+  <li>Safety: who to watch for, when to move, situational awareness while stationary</li>
+  <li>Alternatives and complements: busking, services, odd jobs as adjacent strategies</li>
+</ul>
+
+<div class="box psych">
+  <div class="label">&#x25B6; Your Brain Right Now: Shame and Decision-Making</div>
+  <p>Shame is not just a feeling &mdash; it is a cognitive event. Research shows shame narrows perceived options, triggers avoidance behavior, and makes people less likely to seek help. If you are panhandling and feel the shame acutely, know that it is actively impairing your ability to think about what to do next. Some people manage this by reframing: "I am solving a logistics problem, not defining who I am." Others compartmentalize: do the work, then process the feelings later. There is no shame-free version of this. But there is a version where shame does not run the show.</p>
+</div>
+
+<div class="box game">
+  <div class="label">&#x265F; The Game: The Giving Decision</div>
+  <p>Every passerby makes a split-second cost-benefit calculation: the cost of giving (money, time, discomfort) vs. the psychological reward (guilt relief, empathy, social signaling). Research by behavioral economists shows several levers: <strong>specificity</strong> (asking for a specific amount or item increases giving), <strong>proximity</strong> (eye-level interaction outperforms distance), <strong>identifiable victim effect</strong> (one person's story moves people more than statistics), and <strong>reciprocity</strong> (offering something &mdash; a smile, a blessing, a joke &mdash; triggers the reciprocity norm). Aggressive asks trigger threat responses and reduce giving. The optimal strategy is approachable, specific, and low-pressure. This is not manipulation &mdash; it is understanding what makes humans help other humans.</p>
+</div>
+
+<h2 class="chapter" id="ch16">Chapter 16: Legal Survival</h2>
+<ul>
+  <li>Your rights when homeless: what police can and cannot do</li>
+  <li>The criminalization cycle: ticket &rarr; warrant &rarr; record &rarr; closed doors</li>
+  <li>How to get ID if you have lost everything &mdash; step by step by state</li>
+  <li>Avoiding situations that create criminal records</li>
+  <li>Know-your-rights pocket reference (summarized for quick access)</li>
+</ul>
+
+<div class="box game">
+  <div class="label">&#x265F; The Game: Police Encounters as Asymmetric Games</div>
+  <p>A police encounter is an asymmetric game: the officer holds almost all the power, but you hold information (your rights, your documentation, your awareness of local law). The officer's incentive is usually compliance and clearing the call &mdash; not necessarily arrest. Your optimal strategy: be calm, be cooperative on procedural requests (ID, name), but know where your rights begin. Escalation costs you more than it costs them. De-escalation is not weakness &mdash; it is the dominant strategy in a game where the other player controls the rules. Know the difference between "I have to" and "I am choosing to cooperate."</p>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════════════════════════════════════════ -->
+<!-- PART VI -->
+<!-- ══════════════════════════════════════════════════════════════════════════════════════════════ -->
+<h1 class="part" id="p6">PART VI: HEALTH AND SAFETY</h1>
+<div class="part-subtitle">Staying alive, staying whole, and knowing when to run.</div>
+<div class="est">Estimated length: 40&ndash;50 pages</div>
+
+<h2 class="chapter" id="ch17">Chapter 17: Physical Health</h2>
+<ul>
+  <li>Getting medical care with no insurance: free clinics, FQHCs, ER as last resort</li>
+  <li>Managing chronic conditions without stable housing (diabetes, HIV, asthma)</li>
+  <li>Dental emergencies &mdash; the problem everyone ignores until it is disabling</li>
+  <li>Foot care: your feet are your transportation &mdash; treat them like it</li>
+  <li>Common injuries and infections: what to watch for, when it is urgent</li>
+</ul>
+
+<h2 class="chapter" id="ch18">Chapter 18: Mental Health</h2>
+<ul>
+  <li>The psychological architecture of homelessness: what it does to your brain</li>
+  <li>Shame, identity erosion, and the slow collapse of self-worth</li>
+  <li>Depression and anxiety as rational responses to irrational circumstances</li>
+  <li>Accessing mental health services: crisis lines, free counseling, community resources</li>
+  <li>Substance use: non-judgmental, harm reduction framing</li>
+  <li>When someone around you is in crisis &mdash; what to do, what not to do</li>
+</ul>
+
+<div class="box psych">
+  <div class="label">&#x25B6; Your Brain Right Now: Rational Responses to Irrational Conditions</div>
+  <p>Depression and anxiety among homeless people are often treated as the cause of homelessness. The research says otherwise. For most people, they are rational psychological responses to an environment of chronic stress, danger, and powerlessness. This distinction matters: you are not broken. Your brain is responding correctly to terrible conditions. Treatment helps &mdash; but so does changing the conditions. Do not let anyone convince you that your mental state is the reason you are here rather than the result of being here.</p>
+</div>
+
+<h2 class="chapter" id="ch19">Chapter 19: Violence and Predation</h2>
+<div class="ch-subtitle">The threats nobody wants to talk about.</div>
+<ul>
+  <li>Threat landscape: who is actually dangerous and how to identify them</li>
+  <li>De-escalation in practice &mdash; scripts and tactics that work</li>
+  <li>Protecting yourself while sleeping</li>
+  <li>Sexual violence: prevention, resources, and support (especially for women and LGBTQ+ individuals)</li>
+  <li>Theft prevention and response &mdash; the #1 daily threat to your stability</li>
+  <li>When to run vs. when to stand &mdash; reading situations fast</li>
+</ul>
+
+<div class="box game">
+  <div class="label">&#x265F; The Game: Predator Detection</div>
+  <p>Predators in homeless environments use a consistent playbook: they offer help first (creating obligation), isolate targets from groups, and escalate gradually. Game theory calls this a <em>commitment and escalation trap</em> &mdash; each small concession makes the next one harder to refuse. The defense is recognizing the pattern early: unsolicited generosity from strangers, especially when it comes with conditions or creates isolation, is a signal, not a gift. Trust should be earned through observed behavior over time, not granted in response to a single act of kindness.</p>
+</div>
+
+<h2 class="chapter" id="ch20">Chapter 20: Populations with Specific Risks</h2>
+<ul>
+  <li>Women: safety, DV shelters, reproductive health, traveling alone</li>
+  <li>LGBTQ+ youth: family rejection, shelter safety, targeted resources</li>
+  <li>Elderly: mobility, medications, vulnerability, elder-specific services</li>
+  <li>Families with children: school rights, CPS fears, family shelter dynamics</li>
+  <li>Undocumented individuals: what services you CAN access, what to avoid</li>
+  <li>Veterans: PTSD, VA-specific pathways, peer support</li>
+</ul>
+
+
+<!-- ══════════════════════════════════════════════════════════════════════════════════════════════ -->
+<!-- PART VII -->
+<!-- ══════════════════════════════════════════════════════════════════════════════════════════════ -->
+<h1 class="part" id="p7">PART VII: THE PHONE IS EVERYTHING</h1>
+<div class="part-subtitle">Your smartphone is the most important survival tool you own. This chapter is its manual.</div>
+<div class="est">Estimated length: 15&ndash;20 pages</div>
+
+<h2 class="chapter" id="ch21">Chapter 21: Keeping Your Phone Alive</h2>
+<ul>
+  <li>Free and low-cost phone plans: Lifeline, carrier programs, nonprofit options</li>
+  <li>Charging infrastructure: libraries, malls, outlets, portable batteries</li>
+  <li>Battery triage: what apps to kill, what settings to change, how to stretch 12% to morning</li>
+  <li>What to do if your phone is lost or stolen &mdash; recovery and replacement</li>
+</ul>
+
+<h2 class="chapter" id="ch22">Chapter 22: Your Phone as Survival Tool</h2>
+<ul>
+  <li>Essential apps: shelter finders, food maps, transit, benefits portals, 211</li>
+  <li>Staying connected to support networks &mdash; the lifeline you cannot afford to lose</li>
+  <li>Job searching, applying, and communicating from your phone</li>
+  <li>Digital safety: protecting your data when you are vulnerable</li>
+</ul>
+
+
+<!-- ══════════════════════════════════════════════════════════════════════════════════════════════ -->
+<!-- PART VIII: GEAR (NEW) -->
+<!-- ══════════════════════════════════════════════════════════════════════════════════════════════ -->
+<h1 class="part" id="p8">PART VIII: GEAR AND EQUIPMENT</h1>
+<div class="part-subtitle">What to own, what to improvise, and what to skip. A field guide to the physical tools of survival.</div>
+<div class="est">Estimated length: 25&ndash;35 pages</div>
+
+<h2 class="chapter" id="ch23">Chapter 23: The Survival Kit</h2>
+<div class="ch-subtitle">A prioritized, budget-conscious gear list organized by tier.</div>
+
+<div class="box gear">
+  <div class="label">&#x1F392; Tier 1: The Essentials ($0&ndash;$50)</div>
+  <p><strong>Backpack</strong> &mdash; 40&ndash;60L, internal frame preferred. Your entire life fits in this. Thrift stores, Goodwill, church donations.<br>
+  <strong>Sleeping bag</strong> &mdash; rated 20&deg;F below your climate's low. The single most important piece of gear after your phone.<br>
+  <strong>Tarp</strong> (8x10 minimum) &mdash; ground cloth, rain cover, privacy screen. More versatile than a tent, lighter, cheaper.<br>
+  <strong>Water bottle</strong> &mdash; 32oz minimum, Nalgene-style. Durable, wide-mouth for easy filling.<br>
+  <strong>Flashlight/headlamp</strong> &mdash; LED, AA batteries. Headlamp preferred (frees your hands).<br>
+  <strong>Knife or multi-tool</strong> &mdash; utility tool, not weapon. Box cutter also works.<br>
+  <strong>Hygiene kit</strong> &mdash; toothbrush, toothpaste, soap bar, deodorant, wet wipes, razor. Ziplock bag.<br>
+  <strong>First aid basics</strong> &mdash; bandages, antibiotic ointment, ibuprofen, moleskin for blisters.<br>
+  <strong>Socks</strong> (3+ pairs, wool or synthetic) &mdash; cotton kills. Foot care is transportation maintenance.</p>
+</div>
+
+<div class="box gear">
+  <div class="label">&#x1F392; Tier 2: Quality of Life ($50&ndash;$150)</div>
+  <p><strong>Tent</strong> (2-person backpacking style) &mdash; only if you have a semi-stable spot. Otherwise a tarp is better.<br>
+  <strong>Sleeping pad</strong> &mdash; closed-cell foam ($15) or inflatable ($30+). Insulation from ground cold is critical.<br>
+  <strong>Portable battery pack</strong> &mdash; 10,000+ mAh. Your phone charger for 3&ndash;5 days between outlets.<br>
+  <strong>Rain gear</strong> &mdash; poncho or rain jacket. Wet = cold = hypothermia regardless of temperature.<br>
+  <strong>Stove</strong> &mdash; alcohol stove (cat can stove, $0 DIY) or butane pocket stove ($15). Hot food and water purification.<br>
+  <strong>Water filter</strong> &mdash; Sawyer Squeeze ($25) or LifeStraw ($15). Filters bacteria and protozoa from any freshwater source.<br>
+  <strong>Paracord</strong> (50ft) &mdash; clothesline, tarp tie-downs, gear repair, emergency lashing.<br>
+  <strong>Carabiner clips</strong> (3&ndash;4) &mdash; attach gear to pack, hang things, improvised locks.<br>
+  <strong>Dry bags or heavy-duty garbage bags</strong> &mdash; keeping things dry is keeping things usable.</p>
+</div>
+
+<div class="box gear">
+  <div class="label">&#x1F392; Tier 3: Advanced / Vehicle / Long-Term ($150+)</div>
+  <p><strong>Solar panel</strong> (portable, 10&ndash;20W) &mdash; charges phone and battery pack without finding outlets. Game-changer for rural or long-term outdoor situations.<br>
+  <strong>Hand-crank or battery radio</strong> &mdash; weather alerts, news when phone is dead.<br>
+  <strong>Cast-iron skillet or camp cookset</strong> &mdash; real cooking capability if you have a stable camp.<br>
+  <strong>Insulated water jug</strong> (1&ndash;3 gallon) &mdash; bulk water storage, keeps water cool in heat.<br>
+  <strong>Bike</strong> &mdash; transportation, cargo capacity, no fuel cost. Lock it or lose it.</p>
+</div>
+
+<h2 class="chapter" id="ch24">Chapter 24: Water, Power, and Heat</h2>
+<div class="ch-subtitle">The three resources housed people take for granted that you now need to produce yourself.</div>
+
+<h3>Water</h3>
+<ul>
+  <li><strong>Water filtration</strong>: Sawyer Squeeze vs. LifeStraw vs. chemical treatment (iodine tablets, bleach) &mdash; when to use each</li>
+  <li><strong>Garden hose access</strong>: exterior spigots on commercial buildings, churches, parks. Time-of-day matters. Early morning and late evening minimize confrontation</li>
+  <li>Bulk water storage: collapsible jugs, repurposed containers, cache locations</li>
+  <li>Water purification by boiling &mdash; minimum 1 minute rolling boil, 3 minutes above 6,500ft</li>
+  <li>Signs of contaminated water and when filtration is not enough</li>
+</ul>
+
+<h3>Power</h3>
+<ul>
+  <li><strong>Solar panels</strong>: portable 10&ndash;20W panels, positioning for maximum charge, weather considerations</li>
+  <li><strong>Generators</strong>: only viable for vehicle dwellers or established camps. Noise attracts attention. Propane &gt; gasoline for safety and smell. Legal and social considerations</li>
+  <li>Battery banks: sizing, charging cycles, which devices to prioritize</li>
+  <li>Public power sources: libraries, hospitals, airports, malls, outdoor outlets on buildings</li>
+  <li>12V vehicle systems: running accessories without killing your starter battery, isolator setups</li>
+</ul>
+
+<h3>Heat</h3>
+<ul>
+  <li>Body heat retention: layering system (base layer wicks, mid layer insulates, outer layer blocks wind/water)</li>
+  <li><strong>Parabolic reflectors</strong>: solar cooking and water heating. Commercial models and DIY from satellite dishes or car windshield shades. Focuses sunlight to a point &mdash; can boil water, cook food, sterilize tools in direct sun</li>
+  <li><strong>Magnifying glass / Fresnel lens</strong>: fire starting, water purification, light concentration. A page-size Fresnel lens ($3) can start a fire in seconds and fits in your bag flat</li>
+  <li>Chemical hand warmers vs. reusable hand warmers &mdash; cost per hour analysis</li>
+  <li>Fire: when, where, and how to safely build one. Legal and safety constraints by environment</li>
+  <li>Insulation hacks: cardboard under sleeping bag (R-value of 3&ndash;4 per inch), newspaper stuffing, mylar emergency blankets as radiant barriers</li>
+</ul>
+
+<h2 class="chapter" id="ch25">Chapter 25: Urban Improvisation</h2>
+<div class="ch-subtitle">Making gear from what cities throw away.</div>
+<ul>
+  <li>DIY alcohol stove from aluminum cans (10-minute build, zero cost)</li>
+  <li>Cardboard insulation: layering for ground warmth and wind blocking</li>
+  <li>Plastic sheeting and shower curtains as waterproofing</li>
+  <li>Repurposing shipping pallets for camp platforms (keeps gear off wet/cold ground)</li>
+  <li>Five-gallon bucket as chair, storage, wash basin, and toilet</li>
+  <li>Cable ties, duct tape, and bungee cords as the universal repair kit</li>
+  <li>What to scavenge from construction sites, dumpsters, and recycling (legally)</li>
+</ul>
+
+<div class="box game">
+  <div class="label">&#x265F; The Game: Resource Scarcity and the Commons</div>
+  <p>In camps and shared spaces, gear and resources create a <em>tragedy of the commons</em> problem: shared water, shared fire, shared watch shifts only work if everyone contributes. Free-riders collapse the system. The game theory solution is <em>conditional cooperation with monitoring</em> &mdash; you contribute if others do, and the group tracks who pulls their weight. If you are building or joining a camp, establish contribution norms early. The camps that last are the ones that solved the commons problem.</p>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════════════════════════════════════════ -->
+<!-- PART IX -->
+<!-- ══════════════════════════════════════════════════════════════════════════════════════════════ -->
+<h1 class="part" id="p9">PART IX: THE WAY OUT</h1>
+<div class="part-subtitle">Transitioning from surviving to rebuilding. The hardest part is not getting housed &mdash; it is staying housed.</div>
+<div class="est">Estimated length: 30&ndash;40 pages</div>
+
+<h2 class="chapter" id="ch26">Chapter 26: Prioritizing the Exit</h2>
+<ul>
+  <li>What doors open first: rapid rehousing, transitional programs, subsidized housing</li>
+  <li>Housing First programs &mdash; what they are, where they exist, how to access them</li>
+  <li>The waitlist reality: timelines and how to improve your position</li>
+  <li>Saving money while homeless &mdash; the hardest thing and the most important thing</li>
+</ul>
+
+<h2 class="chapter" id="ch27">Chapter 27: Getting Back into Housing</h2>
+<ul>
+  <li>Renting with a gap in history, bad credit, or a record</li>
+  <li>Landlord conversations: what to say, what to disclose, what not to</li>
+  <li>Security deposits, first/last, and where to find assistance</li>
+  <li>Roommate situations: vetting, agreements, protecting yourself</li>
+  <li>Furnished vs. unfurnished &mdash; starting from zero</li>
+</ul>
+
+<h2 class="chapter" id="ch28">Chapter 28: Staying Housed</h2>
+<div class="ch-subtitle">Most people who exit homelessness return within two years. This chapter is about breaking that cycle.</div>
+<ul>
+  <li>The reintegration identity shift &mdash; you survived, now who are you?</li>
+  <li>Rebuilding credit, banking, employment history from zero</li>
+  <li>Building a financial buffer so a single crisis does not put you back on the street</li>
+  <li>The psychological aftershock: PTSD, hypervigilance, hoarding instincts</li>
+  <li>Building (or rebuilding) a support network that holds</li>
+  <li>Paying it forward: how to help others without re-traumatizing yourself</li>
+</ul>
+
+<div class="box scenario">
+  <div class="label">Scenario: You have been housed for 6 months. You lost your job today.</div>
+  <p>Covers the panic response of someone with homeless trauma, the difference between a setback and a collapse, using the skills you built to prevent a return to the street, and the emotional work of trusting stability.</p>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════════════════════════════════════════ -->
+<!-- PART X -->
+<!-- ══════════════════════════════════════════════════════════════════════════════════════════════ -->
+<h1 class="part" id="p10">PART X: LOCATION PROFILES</h1>
+<div class="part-subtitle">Homelessness is different everywhere. These profiles cover the survival variables that change by geography.</div>
+<div class="est">Estimated length: 40&ndash;50 pages</div>
+
+<h2 class="chapter" id="ch29">Chapter 29: Climate Zones</h2>
+
+<h3>Desert Southwest (Phoenix, Las Vegas, Tucson)</h3>
+<ul>
+  <li>Extreme heat as the primary lethality vector</li>
+  <li>Cooling centers, shade mapping, hydration calculus</li>
+  <li>Overnight viability vs. daytime danger</li>
+  <li>Anti-camping enforcement culture</li>
+</ul>
+
+<h3>Pacific Northwest (Portland, Seattle)</h3>
+<ul>
+  <li>Relentless wet cold &mdash; hypothermia without freezing temperatures</li>
+  <li>Historically tolerant culture now shifting politically</li>
+  <li>Gear priorities: waterproofing over warmth</li>
+  <li>Encampment culture and dynamics</li>
+</ul>
+
+<h3>The Upper Midwest &amp; Northeast (Chicago, Minneapolis, New York, Boston)</h3>
+<ul>
+  <li>Winter as existential threat: frostbite, hypothermia, wind chill</li>
+  <li>Warming centers and the overnight survival circuit</li>
+  <li>NYC right-to-shelter vs. everywhere else</li>
+  <li>Transit systems as de facto shelter</li>
+</ul>
+
+<h3>The South (Houston, Atlanta, Miami, New Orleans)</h3>
+<ul>
+  <li>Heat and humidity: a different calculus than dry desert</li>
+  <li>Hurricane season as a unique threat for unsheltered people</li>
+  <li>Houston Housing First model as a case study</li>
+  <li>Lower cost of living but fewer services</li>
+</ul>
+
+<h3>Rural America</h3>
+<ul>
+  <li>The invisible homeless population</li>
+  <li>No public transit, vast distances, fewer shelters</li>
+  <li>Community-based help vs. institutional support</li>
+  <li>Vehicle dependency and the consequences of breakdown</li>
+</ul>
+
+<h2 class="chapter" id="ch30">Chapter 30: Legal Landscapes</h2>
+<ul>
+  <li>Post-Grants Pass enforcement map: where camping bans are aggressive</li>
+  <li>Right-to-shelter jurisdictions</li>
+  <li>States where panhandling is protected speech vs. criminalized</li>
+  <li>Benefit eligibility differences by state</li>
+  <li>Sex offender registry restrictions on shelter access</li>
+</ul>
+
+
+<!-- ══════════════════════════════════════════════════════════════════════════════════════════════ -->
+<!-- PART XI -->
+<!-- ══════════════════════════════════════════════════════════════════════════════════════════════ -->
+<h1 class="part" id="p11">PART XI: THE INNER GAME</h1>
+<div class="part-subtitle">The research-backed psychology of what homelessness does to you &mdash; and how to fight back. Draws on Mullainathan &amp; Shafir, Seligman, Snow &amp; Anderson, and the work of Paul Toro, Marybeth Shinn, and the APA Task Force on Homelessness.</div>
+<div class="est">Estimated length: 35&ndash;45 pages</div>
+
+<h2 class="chapter" id="ch31">Chapter 31: What Homelessness Does to Your Brain</h2>
+<div class="ch-subtitle">The neuroscience and cognitive science of poverty, scarcity, and chronic stress.</div>
+<ul>
+  <li>The scarcity tax: how financial stress consumes cognitive bandwidth (Mullainathan &amp; Shafir, <em>Science</em>, 2013)</li>
+  <li>Working memory under siege &mdash; why it gets harder to plan, remember, and follow through</li>
+  <li>Time horizon collapse: the neuroscience of why you cannot think past tonight</li>
+  <li>Decision fatigue &mdash; every day requires hundreds of micro-decisions housed people never face</li>
+  <li>The cortisol loop: chronic stress, sleep disruption, and the degradation of executive function</li>
+  <li>Why this matters practically: your brain is not failing you. It is rationing under load.</li>
+</ul>
+
+<h2 class="chapter" id="ch32">Chapter 32: Identity Under Siege</h2>
+<div class="ch-subtitle">Who are you when every social marker is stripped away?</div>
+<ul>
+  <li>The three identity strategies (Snow &amp; Anderson): distancing, embracement, fictive storytelling</li>
+  <li>The counterintuitive finding: strong homeless identity correlates with higher self-esteem but fewer exit attempts</li>
+  <li>Shame as a cognitive event &mdash; how it narrows perceived options and impairs help-seeking</li>
+  <li>Invisible labor: homelessness as a full-time job that nobody recognizes</li>
+  <li>The identity bridge: maintaining continuity between who you were, who you are, and who you will be</li>
+</ul>
+
+<h2 class="chapter" id="ch33">Chapter 33: The Psychological Traps</h2>
+<div class="ch-subtitle">Predictable patterns that keep people stuck. Named so you can see them coming.</div>
+<ul>
+  <li>Learned helplessness (Seligman): when the system trains you to stop trying</li>
+  <li>How to distinguish real dead ends from perceived dead ends</li>
+  <li>Isolation as accelerant &mdash; the withdrawal spiral and why it feels like self-protection</li>
+  <li>Substance use as self-medication: non-judgmental analysis of the logic and the cost</li>
+  <li>Toxic relationships that feel like survival but accelerate decline</li>
+  <li>Comfort in crisis: when the street starts to feel normal and stability feels threatening</li>
+  <li>The trust paradox: homelessness erodes trust in others, which blocks the relationships needed for exit</li>
+</ul>
+
+<h2 class="chapter" id="ch34">Chapter 34: The Resilience Playbook</h2>
+<div class="ch-subtitle">What the research says about who survives and who exits &mdash; and what you can actually do about it.</div>
+<ul>
+  <li>The four resilience factors backed by research: self-efficacy, emotional regulation, social connection, and purpose</li>
+  <li>Micro-routines: the smallest possible structure that preserves agency and dignity</li>
+  <li>Goal-setting under scarcity &mdash; why big goals backfire and small goals compound</li>
+  <li>Building surrogate support networks (peer bonds, mentor relationships, street families)</li>
+  <li>Reframing without toxic positivity &mdash; honest optimism as a survival tool</li>
+  <li>Hope management: calibrating between reckless hope and paralytic despair</li>
+  <li>The exit mindset: what research shows about the psychological shift that precedes getting housed</li>
+</ul>
+
+<div class="box scenario">
+  <div class="label">Scenario: You have been on the street for 8 months. A caseworker offers you a housing slot, but it is in a city 200 miles from everyone you know.</div>
+  <p>Covers the decision calculus of accepting imperfect help, the weight of social isolation vs. physical stability, and the internal negotiation between survival pragmatism and emotional needs.</p>
+</div>
+
+<div class="box game">
+  <div class="label">&#x265F; The Game: The Exit Dilemma</div>
+  <p>Exiting homelessness often presents a <em>prisoner's dilemma</em> variant: the rational short-term choice (stay in the familiar, avoid risk) conflicts with the rational long-term choice (take the imperfect opportunity). Your survival brain, optimized for short-term threat avoidance, will resist the exit. This is compounded by loss aversion &mdash; the relationships, routines, and territory you built on the street feel like assets you are giving up, even though the alternative is objectively better. Recognizing this as a predictable cognitive bias, not a real preference, is the first step. The second step is deciding with your planning brain, not your survival brain.</p>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════════════════════════════════════════════ -->
+<!-- APPENDICES -->
+<!-- ══════════════════════════════════════════════════════════════════════════════════════════════ -->
+<h1 class="part" id="appendices">APPENDICES</h1>
+
+<h2 class="chapter">Appendix A: The Go-Bag Checklist</h2>
+<p><em>A complete, prioritized packing list for leaving on short notice.</em></p>
+
+<h2 class="chapter">Appendix B: Document Recovery Guide</h2>
+<p><em>Step-by-step instructions for replacing ID, Social Security card, and birth certificate in every state.</em></p>
+
+<h2 class="chapter">Appendix C: Rights-at-a-Glance Card</h2>
+<p><em>A one-page summary of your legal rights when interacting with police, shelters, and social services. Designed to be printed or screenshotted.</em></p>
+
+<h2 class="chapter">Appendix D: Essential Phone Numbers</h2>
+<p><em>National hotlines by category: shelter, crisis, veterans, DV, LGBTQ+ youth, legal aid.</em></p>
+
+<h2 class="chapter">Appendix E: City-by-City Resource Directory</h2>
+<p><em>QR codes linking to maintained online resource lists for 25+ cities. (Online companion updated quarterly.)</em></p>
+
+<h2 class="chapter">Appendix F: Benefits Eligibility Quick Reference</h2>
+<p><em>State-by-state snapshot of SNAP, Medicaid, GA, and housing program eligibility and application steps.</em></p>
+
+
+<!-- ══════════════════════════════════════════════════════════════════════════════════════════════ -->
+<!-- DESIGN NOTES -->
+<!-- ══════════════════════════════════════════════════════════════════════════════════════════════ -->
+<h1 class="part" id="design">PAGE STRUCTURE &amp; DESIGN NOTES</h1>
+<p><em>Notes for layout, formatting, and production.</em></p>
+
+<h3>Trim Size</h3>
+<p>Recommended: 5.5" &times; 8.5" (trade paperback) &mdash; portable enough to carry, large enough to read comfortably. Paperback only. This is not a coffee table book.</p>
+
+<h3>Estimated Page Count</h3>
+<p>340&ndash;420 pages at standard trade paperback density, including psychology sidebars, game theory sidebars, scenario interludes, and gear lists.</p>
+
+<h3>Typography</h3>
+<ul>
+  <li>Body text: highly readable serif (Georgia, Garamond, or similar), 11pt, generous line spacing</li>
+  <li>Headings: clean sans-serif (Arial, Helvetica), bold, clear hierarchy</li>
+  <li>Scenario interludes: gray shaded box, distinct from body text</li>
+  <li>Psychology sidebars (YOUR BRAIN RIGHT NOW): blue-gray shaded box</li>
+  <li>Game theory sidebars (THE GAME): warm tan shaded box</li>
+  <li>Gear lists: green-tinted shaded box with tiered organization</li>
+</ul>
+
+<h3>Page Elements</h3>
+<ul>
+  <li><strong>Chapter Openers</strong> &mdash; chapter number, title, one-line italic subtitle. No decorative elements.</li>
+  <li><strong>Scenario Interludes</strong> &mdash; 5&ndash;6 throughout. Location + season + constraints, followed by walkthrough. Teaches decision-making.</li>
+  <li><strong>Psychology Sidebars</strong> &mdash; 6&ndash;8 throughout. One research-backed insight per box, always ending with a practical takeaway.</li>
+  <li><strong>Game Theory Sidebars</strong> &mdash; 6&ndash;8 throughout. Frame survival situations as strategic interactions with identifiable optimal plays.</li>
+  <li><strong>Gear Lists</strong> &mdash; tiered by budget and necessity. Prices, specific product names where helpful, DIY alternatives.</li>
+  <li><strong>Quick-Reference Sidebars</strong> &mdash; numbers to call, checklists, warnings. Designed to be photographed on a phone.</li>
+  <li><strong>Cross-References</strong> &mdash; frequent links between chapters. Reinforces non-linear reading.</li>
+</ul>
+
+<h3>Accessibility</h3>
+<ul>
+  <li>Digital version should be available free or low-cost (library systems, PDF, ebook)</li>
+  <li>Print version should be durable (consider weather-resistant cover)</li>
+  <li>Language: 8th-grade reading level throughout, no jargon without explanation</li>
+  <li>Consider Spanish-language edition as a priority second edition</li>
+</ul>
+
+<h3>Online Companion</h3>
+<p>The book should link to a maintained website or QR code directory for resources that change (shelter availability, phone numbers, benefit levels). Print is for the framework and advice; the web companion is for the data.</p>
+
+</div><!-- .main -->
+</body>
+</html>

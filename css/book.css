@@ -1,0 +1,861 @@
+/* ═══════════════════════════════════════════════════════════════
+   HOW TO BE HOMELESS — Book Design System
+   Bible-compact layout: 6.5" × 9.25", two-column, dense
+   ═══════════════════════════════════════════════════════════════ */
+
+:root {
+  /* Page dimensions — 6.5" × 9.25" compact reference */
+  --page-w: 6.5in;
+  --page-h: 9.25in;
+  --page-margin-top: 0.45in;
+  --page-margin-bottom: 0.4in;
+  --page-margin-outer: 0.5in;
+  --page-margin-inner: 0.6in;
+
+  /* Column layout */
+  --col-gap: 0.25in;
+
+  /* Type scale — accessible sans-serif (11pt body) */
+  --fs-xs: 7.5pt;
+  --fs-sm: 9pt;
+  --fs-base: 11pt;
+  --fs-md: 13pt;
+  --fs-lg: 16pt;
+  --fs-xl: 22pt;
+  --fs-2xl: 28pt;
+  --fs-3xl: 34pt;
+
+  /* Colors */
+  --ink: #1a1a1a;
+  --ink-light: #333;
+  --ink-muted: #666;
+  --ink-faint: #999;
+  --accent: #2E4057;
+  --rule: #ccc;
+  --rule-light: #ddd;
+
+  /* Sidebar colors */
+  --psych-bg: #e8edf4;
+  --psych-border: #9fb3cf;
+  --psych-label: #2E4057;
+
+  --game-bg: #f5f0e4;
+  --game-border: #c9b980;
+  --game-label: #6b5a2e;
+
+  --scenario-bg: #eeeee8;
+  --scenario-border: #b0aca0;
+  --scenario-label: #444;
+
+  --gear-bg: #eaf2eb;
+  --gear-border: #8cb89a;
+  --gear-label: #2a5a36;
+
+  --warning-bg: #fdf3ed;
+  --warning-border: #d4956a;
+  --warning-label: #8a4e2a;
+
+  --tip-bg: #f0f7f1;
+  --tip-border: #7ab88a;
+  --tip-label: #2a5a36;
+
+  /* Fonts — sans-serif for field readability */
+  --font-body: -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-heading: -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+
+/* ── RESET ── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* ── CANVAS (the gray background behind the pages) ── */
+html {
+  background: #c8c8c8;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  line-height: 1.4;
+  color: var(--ink);
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  min-height: 100vh;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   THE PAGE — Each .book-page is one printed page
+   ═══════════════════════════════════════════════════════════════ */
+.book-page {
+  width: var(--page-w);
+  min-height: var(--page-h);
+  background: #fff;
+  box-shadow:
+    0 1px 4px rgba(0,0,0,0.12),
+    0 4px 16px rgba(0,0,0,0.08);
+  padding: var(--page-margin-top) var(--page-margin-outer) var(--page-margin-bottom) var(--page-margin-inner);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Alternate left/right margin for recto/verso (even/odd) */
+.book-page.verso {
+  padding-left: var(--page-margin-outer);
+  padding-right: var(--page-margin-inner);
+}
+
+.book-page.recto {
+  padding-left: var(--page-margin-inner);
+  padding-right: var(--page-margin-outer);
+}
+
+
+/* ── Two-column body ── */
+.page-content {
+  column-count: 2;
+  column-gap: var(--col-gap);
+  column-rule: 0.25pt solid var(--rule-light);
+}
+
+/* Full-width elements that break out of columns */
+.page-content .full-width {
+  column-span: all;
+}
+
+/* ── Running header ── */
+.running-header {
+  font-family: var(--font-heading);
+  font-size: var(--fs-xs);
+  color: var(--ink-faint);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-bottom: 8pt;
+  padding-bottom: 3pt;
+  border-bottom: 0.25pt solid var(--rule-light);
+  display: flex;
+  justify-content: space-between;
+}
+
+.running-header .rh-left {
+  font-weight: 400;
+}
+
+.running-header .rh-right {
+  font-weight: 600;
+}
+
+
+/* ── Page number ── */
+.page-number {
+  position: absolute;
+  bottom: 0.4in;
+  font-family: var(--font-heading);
+  font-size: var(--fs-sm);
+  color: var(--ink-muted);
+}
+
+.book-page.verso .page-number {
+  left: var(--page-margin-outer);
+}
+
+.book-page.recto .page-number {
+  right: var(--page-margin-outer);
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   TITLE PAGE (special — no running header)
+   ═══════════════════════════════════════════════════════════════ */
+.title-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: calc(var(--page-h) - var(--page-margin-top) - var(--page-margin-bottom));
+}
+
+.title-page h1 {
+  font-family: var(--font-heading);
+  font-size: var(--fs-3xl);
+  font-weight: 800;
+  letter-spacing: -0.5pt;
+  line-height: 1.1;
+  margin-bottom: 8pt;
+}
+
+.title-page .book-subtitle {
+  font-family: var(--font-body);
+  font-size: var(--fs-md);
+  color: var(--ink-muted);
+  font-style: italic;
+  margin-bottom: 20pt;
+}
+
+.title-page .author {
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  margin-bottom: 48pt;
+}
+
+.title-page .imprint {
+  font-family: var(--font-heading);
+  font-size: var(--fs-xs);
+  color: var(--ink-faint);
+  text-transform: uppercase;
+  letter-spacing: 2pt;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   CHAPTER OPENER PAGE
+   ═══════════════════════════════════════════════════════════════ */
+.chapter-opener {
+  padding-top: 0.8in;
+}
+
+.chapter-opener .running-header {
+  display: none; /* No running header on chapter openers */
+}
+
+.chapter-opener .part-label {
+  font-family: var(--font-heading);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2.5pt;
+  color: var(--ink-faint);
+  margin-bottom: 6pt;
+}
+
+.chapter-opener .chapter-number {
+  font-family: var(--font-heading);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2pt;
+  color: var(--accent);
+  margin-bottom: 4pt;
+}
+
+.chapter-opener h1 {
+  font-family: var(--font-heading);
+  font-size: var(--fs-2xl);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.5pt;
+  color: var(--ink);
+  margin-bottom: 6pt;
+}
+
+.chapter-opener .ch-subtitle {
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  font-style: italic;
+  color: var(--ink-muted);
+  line-height: 1.3;
+  margin-bottom: 10pt;
+  max-width: 4in;
+}
+
+.chapter-opener .ch-epigraph {
+  font-style: italic;
+  font-size: var(--fs-sm);
+  color: var(--ink-muted);
+  border-left: 1.5pt solid var(--rule);
+  padding-left: 12pt;
+  margin-top: 16pt;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   BODY TEXT
+   ═══════════════════════════════════════════════════════════════ */
+.page-content p {
+  margin-bottom: 3pt;
+  text-align: left;
+}
+
+.page-content p + p {
+  text-indent: 1.5em;
+}
+
+/* After headings, boxes, lists — no indent */
+.page-content h2 + p,
+.page-content h3 + p,
+.page-content .sidebar + p,
+.page-content .scenario + p,
+.page-content ul + p,
+.page-content ol + p,
+.page-content blockquote + p,
+.page-content hr + p,
+.page-content .takeaway + p {
+  text-indent: 0;
+}
+
+/* Drop cap */
+.page-content .drop-cap::first-letter {
+  font-family: var(--font-heading);
+  float: left;
+  font-size: 2.6em;
+  line-height: 0.82;
+  padding-right: 2pt;
+  padding-top: 2pt;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.page-content .drop-cap {
+  text-indent: 0;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   HEADINGS
+   ═══════════════════════════════════════════════════════════════ */
+.page-content h2 {
+  font-family: var(--font-heading);
+  font-size: var(--fs-md);
+  font-weight: 700;
+  color: var(--ink);
+  margin: 8pt 0 2pt;
+  letter-spacing: -0.2pt;
+  column-span: all;
+}
+
+.page-content h3 {
+  font-family: var(--font-heading);
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  color: var(--ink-light);
+  text-transform: uppercase;
+  letter-spacing: 0.6pt;
+  margin: 6pt 0 1pt;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   LISTS
+   ═══════════════════════════════════════════════════════════════ */
+.page-content ul,
+.page-content ol {
+  margin: 2pt 0 4pt;
+  padding-left: 1.2em;
+}
+
+.page-content li {
+  margin-bottom: 1pt;
+  line-height: 1.3;
+  text-align: left;
+}
+
+.page-content li::marker {
+  color: var(--ink-muted);
+}
+
+/* Checklist */
+.page-content ul.checklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.page-content ul.checklist li {
+  padding-left: 1.4em;
+  position: relative;
+}
+
+.page-content ul.checklist li::before {
+  content: '\25A1';
+  position: absolute;
+  left: 0;
+  color: var(--ink-muted);
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   BLOCKQUOTES
+   ═══════════════════════════════════════════════════════════════ */
+.page-content blockquote {
+  margin: 3pt 0;
+  padding: 3pt 8pt;
+  border-left: 1.5pt solid var(--accent);
+  font-style: italic;
+  color: var(--ink-light);
+  font-size: var(--fs-base);
+}
+
+.page-content blockquote p {
+  text-indent: 0;
+  text-align: left;
+  margin-bottom: 3pt;
+}
+
+.page-content blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.page-content blockquote cite {
+  display: block;
+  margin-top: 4pt;
+  font-size: var(--fs-xs);
+  font-style: normal;
+  color: var(--ink-faint);
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   SIDEBARS — Shared
+   ═══════════════════════════════════════════════════════════════ */
+.sidebar {
+  margin: 4pt 0;
+  padding: 5pt 6pt;
+  border-radius: 2pt;
+  border-left: 2pt solid;
+  font-size: 9.5pt;
+  line-height: 1.35;
+  break-inside: avoid;
+}
+
+.sidebar .sidebar-label {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 8pt;
+  text-transform: uppercase;
+  letter-spacing: 0.8pt;
+  margin-bottom: 2pt;
+  display: flex;
+  align-items: center;
+  gap: 2pt;
+}
+
+.sidebar .sidebar-label .icon {
+  font-size: 1.1em;
+}
+
+.sidebar p {
+  text-indent: 0 !important;
+  text-align: left !important;
+  margin-bottom: 2pt;
+}
+
+.sidebar p:last-child { margin-bottom: 0; }
+
+.sidebar ul {
+  margin: 1pt 0 2pt;
+  padding-left: 1.1em;
+}
+
+.sidebar li { margin-bottom: 0; }
+
+
+/* ── Psychology ── */
+.sidebar.psych {
+  background: var(--psych-bg);
+  border-color: var(--psych-border);
+}
+.sidebar.psych .sidebar-label { color: var(--psych-label); }
+
+/* ── Game Theory ── */
+.sidebar.game {
+  background: var(--game-bg);
+  border-color: var(--game-border);
+}
+.sidebar.game .sidebar-label { color: var(--game-label); }
+
+/* ── Gear ── */
+.sidebar.gear {
+  background: var(--gear-bg);
+  border-color: var(--gear-border);
+}
+.sidebar.gear .sidebar-label { color: var(--gear-label); }
+
+/* ── Warning ── */
+.sidebar.warning {
+  background: var(--warning-bg);
+  border-color: var(--warning-border);
+}
+.sidebar.warning .sidebar-label { color: var(--warning-label); }
+
+/* ── Tip ── */
+.sidebar.tip {
+  background: var(--tip-bg);
+  border-color: var(--tip-border);
+}
+.sidebar.tip .sidebar-label { color: var(--tip-label); }
+
+
+/* ═══════════════════════════════════════════════════════════════
+   SCENARIO INTERLUDES
+   ═══════════════════════════════════════════════════════════════ */
+.scenario {
+  margin: 4pt 0;
+  border: 0.5pt solid var(--scenario-border);
+  border-radius: 2pt;
+  overflow: hidden;
+  break-inside: avoid;
+}
+
+.scenario-header {
+  background: var(--ink);
+  color: #fff;
+  padding: 4pt 6pt;
+  font-family: var(--font-heading);
+}
+
+.scenario-header .scenario-label {
+  font-size: 7pt;
+  text-transform: uppercase;
+  letter-spacing: 1.5pt;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 1pt;
+  font-weight: 600;
+}
+
+.scenario-header .scenario-title {
+  font-size: 9.5pt;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.scenario-body {
+  background: var(--scenario-bg);
+  padding: 5pt 6pt;
+  font-size: 9.5pt;
+  line-height: 1.35;
+}
+
+.scenario-body p {
+  text-indent: 0 !important;
+  text-align: left !important;
+  margin-bottom: 2pt;
+}
+
+.scenario-body p:last-child { margin-bottom: 0; }
+
+.scenario-body .constraints {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 8pt;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4pt;
+}
+
+.scenario-body .constraints li {
+  font-family: var(--font-heading);
+  font-size: 7pt;
+  font-weight: 600;
+  background: rgba(0,0,0,0.07);
+  padding: 1pt 4pt;
+  border-radius: 1pt;
+  color: var(--ink-light);
+  margin-bottom: 0;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   KEY TAKEAWAY BOX
+   ═══════════════════════════════════════════════════════════════ */
+.takeaway {
+  margin: 6pt 0;
+  padding: 6pt 8pt;
+  background: #f0ede6;
+  border: 1pt solid #b0a890;
+  border-left: 3pt solid var(--ink);
+  border-radius: 2pt;
+  font-size: 9.5pt;
+  line-height: 1.35;
+  break-inside: avoid;
+  column-span: all;
+}
+
+.takeaway .takeaway-label {
+  font-family: var(--font-heading);
+  font-size: 8pt;
+  text-transform: uppercase;
+  letter-spacing: 1.5pt;
+  color: var(--ink-muted);
+  margin-bottom: 3pt;
+  font-weight: 700;
+}
+
+.takeaway p {
+  text-indent: 0 !important;
+  text-align: left !important;
+  color: var(--ink);
+  margin-bottom: 1pt;
+}
+
+.takeaway p:last-child { margin-bottom: 0; }
+.takeaway strong { font-weight: 700; }
+
+.takeaway ul {
+  padding-left: 1.1em;
+  margin: 1pt 0;
+  column-count: 2;
+  column-gap: 10pt;
+}
+
+.takeaway li {
+  color: var(--ink-light);
+  margin-bottom: 1pt;
+}
+
+.takeaway li::marker {
+  color: var(--ink-muted);
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   CROSS-REFERENCES
+   ═══════════════════════════════════════════════════════════════ */
+.xref {
+  font-family: var(--font-heading);
+  font-size: var(--fs-sm);
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 0.5pt dotted var(--accent);
+}
+
+.xref::before {
+  content: '\2192\00a0';
+  font-size: 0.85em;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   SECTION BREAK
+   ═══════════════════════════════════════════════════════════════ */
+.page-content hr {
+  border: none;
+  text-align: center;
+  margin: 6pt 0;
+  column-span: all;
+}
+
+.page-content hr::before {
+  content: '\2022\00a0\00a0\2022\00a0\00a0\2022';
+  color: var(--ink-faint);
+  font-size: var(--fs-sm);
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   TABLE OF CONTENTS PAGE
+   ═══════════════════════════════════════════════════════════════ */
+.toc-heading {
+  font-family: var(--font-heading);
+  font-size: var(--fs-xl);
+  font-weight: 800;
+  margin-bottom: 20pt;
+  letter-spacing: -0.5pt;
+}
+
+.toc-part {
+  margin-bottom: 14pt;
+}
+
+.toc-part-header {
+  display: flex;
+  align-items: baseline;
+  gap: 6pt;
+  padding-bottom: 3pt;
+  border-bottom: 1pt solid var(--ink);
+  margin-bottom: 2pt;
+}
+
+.toc-part-number {
+  font-family: var(--font-heading);
+  font-size: 7pt;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5pt;
+  color: var(--ink-muted);
+  white-space: nowrap;
+}
+
+.toc-part-title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-md);
+  font-weight: 700;
+}
+
+.toc-entry {
+  display: flex;
+  align-items: baseline;
+  padding: 2pt 0;
+  gap: 6pt;
+}
+
+.toc-num {
+  font-family: var(--font-heading);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--ink-muted);
+  width: 1.4em;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.toc-title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-base);
+  font-weight: 500;
+  flex: 1;
+}
+
+.toc-dots {
+  flex: 1;
+  border-bottom: 0.5pt dotted var(--rule);
+  margin: 0 4pt;
+  min-width: 20pt;
+  align-self: baseline;
+  position: relative;
+  top: -3pt;
+}
+
+.toc-page {
+  font-family: var(--font-heading);
+  font-size: var(--fs-sm);
+  color: var(--ink-muted);
+  flex-shrink: 0;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   APPENDIX HEADING
+   ═══════════════════════════════════════════════════════════════ */
+.toc-appendix-header {
+  font-family: var(--font-heading);
+  font-size: var(--fs-md);
+  font-weight: 700;
+  margin-top: 16pt;
+  margin-bottom: 4pt;
+  padding-bottom: 3pt;
+  border-bottom: 1pt solid var(--ink);
+}
+
+.toc-appendix-entry {
+  display: flex;
+  align-items: baseline;
+  padding: 2pt 0;
+  gap: 6pt;
+  font-family: var(--font-heading);
+  font-size: var(--fs-sm);
+}
+
+.toc-appendix-entry .app-letter {
+  font-weight: 700;
+  color: var(--ink-muted);
+  width: 1.4em;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   READING GUIDE LEGEND
+   ═══════════════════════════════════════════════════════════════ */
+.legend-title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1pt;
+  color: var(--ink-muted);
+  margin-top: 24pt;
+  margin-bottom: 8pt;
+}
+
+.legend-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5pt;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6pt;
+  font-family: var(--font-heading);
+  font-size: 9.5pt;
+  color: var(--ink-light);
+}
+
+.legend-swatch {
+  width: 20pt;
+  height: 12pt;
+  border-radius: 1.5pt;
+  border-left: 2.5pt solid;
+  flex-shrink: 0;
+}
+
+.sw-psych { background: var(--psych-bg); border-color: var(--psych-border); }
+.sw-game { background: var(--game-bg); border-color: var(--game-border); }
+.sw-scenario { background: var(--ink); border-color: var(--ink); }
+.sw-gear { background: var(--gear-bg); border-color: var(--gear-border); }
+.sw-warning { background: var(--warning-bg); border-color: var(--warning-border); }
+.sw-takeaway { background: var(--ink); border-color: var(--ink); }
+
+
+/* ═══════════════════════════════════════════════════════════════
+   RESPONSIVE — scale pages down on smaller screens
+   ═══════════════════════════════════════════════════════════════ */
+@media (max-width: 620px) {
+  body {
+    padding: 16px 0;
+    gap: 16px;
+  }
+
+  .book-page {
+    width: 95vw;
+    min-height: auto;
+    padding: 32px 24px 40px;
+  }
+
+  .book-page.verso,
+  .book-page.recto {
+    padding: 32px 24px 40px;
+  }
+
+  .page-number {
+    position: static;
+    text-align: center;
+    margin-top: 24px;
+  }
+
+  .chapter-opener {
+    padding-top: 48px;
+  }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   PRINT
+   ═══════════════════════════════════════════════════════════════ */
+@media print {
+  html { background: #fff; }
+  body { padding: 0; gap: 0; }
+
+  .book-page {
+    box-shadow: none;
+    page-break-after: always;
+    min-height: auto;
+  }
+
+  .sidebar, .scenario, .takeaway {
+    page-break-inside: avoid;
+  }
+
+  h2, h3 { page-break-after: avoid; }
+}
