@@ -331,7 +331,7 @@ Maintain 2 outfits and rotate. Wear one, wash the other. Laundromat: $2–$4 per
 > **▶ Why Dignity Matters**
 > Research consistently shows that people who maintain personal appearance and daily routines exit homelessness faster. This is not about vanity. Looking presentable opens doors: employers hire you, landlords approve you, service providers take you seriously, and strangers treat you like a person. The moment you stop caring about how you look is the moment the street starts winning.
 
-*Deep dive: [Ch34: Identity](#ch34) covers maintaining your sense of self. [Ch14: Income](#ch14) covers hiding homelessness at work and interview prep.*
+*Deep dive: [Ch35: Identity](#ch35) covers maintaining your sense of self. [Ch14: Income](#ch14) covers hiding homelessness at work and interview prep.*
 
 > **⚠ The Weight Rule: 20–30 Pounds Maximum**
 > Military soldiers carry 60–100 lbs, but they are trained for it and have unit support. You are carrying your bag alone, all day, with no break. Over 30 lbs, you get shoulder and back pain within hours, blisters on your feet within days, and you start abandoning gear within a week. Weigh your packed bag on a bathroom scale before you leave. If it is over 30 lbs, take something out.

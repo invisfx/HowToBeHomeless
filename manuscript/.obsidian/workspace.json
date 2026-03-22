@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00-front-matter.md",
+                "file": "ch34-mindfulness.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00-front-matter"
+              "title": "ch34-mindfulness"
             }
           }
         ]
@@ -183,27 +183,36 @@
       "bases:Create new base": false
     }
   },
-  "active": "b40b82431f846b5d",
+  "active": "948b8fd21fb18b8d",
   "lastOpenFiles": [
+    "ch03-go-bag.md.tmp.16888.1774219402903",
+    "ch37-resilience.md.tmp.16888.1774219402430",
+    "ch36-traps.md.tmp.16888.1774219401098",
+    "ch35-identity.md.tmp.16888.1774219400200",
+    "ch37-resilience.md",
+    "ch36-traps.md",
+    "ch35-identity.md",
+    "ch33-your-brain.md",
+    "ch34-mindfulness.md.tmp.16888.1774219357780",
+    "ch34-mindfulness.md",
+    "ch34-mindfulness.md.tmp.16888.1774219331746",
+    "ch33-your-brain.md.tmp.16888.1774219279387",
+    "ch33-your-brain.md.tmp.16888.1774219227408",
+    "ch36-resilience.md",
+    "ch19-mental-health.md",
+    "ch05-night-one.md",
+    "ch04-prepositioning.md",
+    "ch06-orientation.md",
+    "99-back-matter.md",
+    "00-front-matter.md",
     "ch32-legal-landscapes.md.tmp.16888.1774217671610",
     "ch29-staying-housed.md.tmp.16888.1774217670985",
     "ch16-panhandling.md.tmp.16888.1774217669659",
-    "ch14-income.md.tmp.16888.1774217668767",
-    "ch11-food.md.tmp.16888.1774217667662",
-    "ch06-orientation.md.tmp.16888.1774217666536",
-    "ch05-night-one.md.tmp.16888.1774217665213",
-    "ch03-go-bag.md.tmp.16888.1774217660557",
-    "ch03-go-bag.md.tmp.16888.1774217659855",
-    "ch03-go-bag.md.tmp.16888.1774217658507",
-    "ch03-go-bag.md.tmp.16888.1774217657601",
-    "ch36-resilience.md",
-    "ch04-prepositioning.md",
     "ch03-go-bag.md",
     "ch01-damage-control.md",
     "ch00-prevention.md",
     "ch35-traps.md",
     "ch34-identity.md",
-    "ch33-your-brain.md",
     "ch32-legal-landscapes.md",
     "ch31-climate-zones.md",
     "ch30-best-worst-places.md",
@@ -211,15 +220,6 @@
     "ch28-getting-housed.md",
     "ch27-prioritizing-exit.md",
     "ch26-urban-improvisation.md",
-    "ch25-water-power-heat.md",
-    "ch24-survival-kit.md",
-    "ch23-phone-tool.md",
-    "ch22-phone-alive.md",
-    "ch21-populations.md",
-    "ch20-violence.md",
-    "ch19-mental-health.md",
-    "ch18-physical-health.md",
-    "ch17-legal.md",
-    "ch16-panhandling.md"
+    "ch25-water-power-heat.md"
   ]
 }

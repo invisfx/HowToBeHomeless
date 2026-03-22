@@ -1,4 +1,4 @@
-# Chapter 34: Identity Under Siege {#ch34}
+# Chapter 35: Identity Under Siege {#ch35}
 
 *Who are you when every social marker is stripped away?*
 
