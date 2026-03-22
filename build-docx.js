@@ -232,12 +232,12 @@ async function buildDoc() {
     new Paragraph({
       alignment: AlignmentType.CENTER,
       spacing: { after: 200 },
-      children: [new TextRun({ text: 'HOW TO BE HOMELESS', bold: true, font: 'Arial', size: 56 })]
+      children: [new TextRun({ text: 'NO QUARTER', bold: true, font: 'Arial', size: 56 })]
     }),
     new Paragraph({
       alignment: AlignmentType.CENTER,
       spacing: { after: 400 },
-      children: [new TextRun({ text: 'A Practical Survival Guide', italics: true, font: 'Arial', size: 28, color: '666666' })]
+      children: [new TextRun({ text: 'A Field Manual for Starting from Nothing', italics: true, font: 'Arial', size: 28, color: '666666' })]
     }),
     new Paragraph({
       alignment: AlignmentType.CENTER,
@@ -522,7 +522,7 @@ async function buildDoc() {
         default: new Header({
           children: [new Paragraph({
             alignment: AlignmentType.CENTER,
-            children: [new TextRun({ text: 'How To Be Homeless \u2014 A Practical Survival Guide', font: 'Arial', size: 14, color: '999999' })]
+            children: [new TextRun({ text: 'No Quarter \u2014 A Field Manual for Starting from Nothing', font: 'Arial', size: 14, color: '999999' })]
           })]
         })
       },

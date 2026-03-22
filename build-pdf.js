@@ -187,8 +187,8 @@ async function buildPDF() {
 
 <!-- Title Page -->
 <div style="text-align:center; padding-top: 3in;">
-  <div style="font-size: 30pt; font-weight: 800; margin-bottom: 8pt;">HOW TO BE HOMELESS</div>
-  <div style="font-size: 14pt; font-style: italic; color: #666; margin-bottom: 20pt;">A Practical Survival Guide</div>
+  <div style="font-size: 30pt; font-weight: 800; margin-bottom: 8pt;">NO QUARTER</div>
+  <div style="font-size: 14pt; font-style: italic; color: #666; margin-bottom: 20pt;">A Field Manual for Starting from Nothing</div>
   <div style="font-size: 12pt; margin-bottom: 40pt;">by Doug Addy</div>
   <div style="font-size: 8pt; color: #999; text-transform: uppercase; letter-spacing: 2pt;">Working Draft &mdash; March 2026</div>
 </div>
@@ -220,7 +220,7 @@ ${combinedBody}
     margin: { top: '0.5in', right: '0.5in', bottom: '0.5in', left: '0.6in' },
     printBackground: true,
     displayHeaderFooter: true,
-    headerTemplate: '<div style="font-size:7pt;color:#999;text-align:center;width:100%;font-family:Arial">How To Be Homeless &mdash; A Practical Survival Guide</div>',
+    headerTemplate: '<div style="font-size:7pt;color:#999;text-align:center;width:100%;font-family:Arial">No Quarter &mdash; A Field Manual for Starting from Nothing</div>',
     footerTemplate: '<div style="font-size:8pt;color:#666;text-align:center;width:100%;font-family:Arial">Page <span class="pageNumber"></span></div>'
   });
 
