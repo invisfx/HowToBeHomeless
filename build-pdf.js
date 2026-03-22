@@ -13,7 +13,14 @@ async function buildPDF() {
 
   // ── 2. Read all chapter files in order ──
   const chaptersDir = path.join(__dirname, 'chapters');
-  const files = fs.readdirSync(chaptersDir).filter(f => f.endsWith('.html')).sort();
+  const files = fs.readdirSync(chaptersDir).filter(f => f.endsWith('.html')).sort((a, b) => {
+    // Chapters (ch01-ch35) come first, appendices come last
+    const aIsAppendix = a.startsWith('appendix');
+    const bIsAppendix = b.startsWith('appendix');
+    if (aIsAppendix && !bIsAppendix) return 1;
+    if (!aIsAppendix && bIsAppendix) return -1;
+    return a.localeCompare(b);
+  });
 
   let chaptersBody = '';
   for (const file of files) {

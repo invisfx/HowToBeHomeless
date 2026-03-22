@@ -62,8 +62,8 @@ function extractContent(html) {
     elements.push({ type: 'subtitle', text: stripTags(subtitleMatch[1]) });
   }
 
-  // Extract page-content blocks
-  const contentBlocks = html.match(/<div class="page-content">([\s\S]*?)<\/div>\s*\n\s*<div class="page-number[^"]*">/g);
+  // Extract page-content blocks (handle style attributes and flexible whitespace)
+  const contentBlocks = html.match(/<div class="page-content"[^>]*>([\s\S]*?)<\/div>\s*(?:\n\s*)?<div class="page-number[^"]*">/g);
   if (!contentBlocks) return elements;
 
   for (const block of contentBlocks) {
@@ -194,7 +194,13 @@ function extractContent(html) {
 // ── Build Word document ──
 async function buildDoc() {
   const chaptersDir = path.join(__dirname, 'chapters');
-  const files = fs.readdirSync(chaptersDir).filter(f => f.endsWith('.html')).sort();
+  const files = fs.readdirSync(chaptersDir).filter(f => f.endsWith('.html')).sort((a, b) => {
+    const aIsAppendix = a.startsWith('appendix');
+    const bIsAppendix = b.startsWith('appendix');
+    if (aIsAppendix && !bIsAppendix) return 1;
+    if (!aIsAppendix && bIsAppendix) return -1;
+    return a.localeCompare(b);
+  });
 
   console.log(`Processing ${files.length} chapter files...`);
 

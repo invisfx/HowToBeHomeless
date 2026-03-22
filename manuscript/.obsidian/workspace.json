@@ -1,0 +1,225 @@
+{
+  "main": {
+    "id": "0be97c659bafb0bb",
+    "type": "split",
+    "children": [
+      {
+        "id": "180dbdf7695c52b2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b40b82431f846b5d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ch04-night-one.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ch04-night-one"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5b4388298a3de85a",
+    "type": "split",
+    "children": [
+      {
+        "id": "ef14e0ce83654ae3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "948b8fd21fb18b8d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "4cd1f81562764adb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "6d3140f91b7484f9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 334.5
+  },
+  "right": {
+    "id": "411199f6993bf0a4",
+    "type": "split",
+    "children": [
+      {
+        "id": "f48dfdd8ba69e422",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fe44e02fadfc8e7f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "ch01-triage.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for ch01-triage"
+            }
+          },
+          {
+            "id": "693e912ba7848cc2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "ch01-triage.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from ch01-triage"
+            }
+          },
+          {
+            "id": "4350a90be2791e45",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "43c307788037dad8",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "1dcf81d8ee805f08",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "ch01-triage.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of ch01-triage"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "b40b82431f846b5d",
+  "lastOpenFiles": [
+    "ch01-triage.md.tmp.16888.1774216623827",
+    "ch19-violence.md.tmp.16888.1774216515269",
+    "ch11-water-hygiene.md.tmp.16888.1774216494795",
+    "ch02-go-bag.md.tmp.16888.1774216493565",
+    "ch02-go-bag.md.tmp.16888.1774216492675",
+    "ch13-income.md.tmp.16888.1774216486819",
+    "ch23-survival-kit.md.tmp.16888.1774216476720",
+    "ch02-go-bag.md.tmp.16888.1774216460867",
+    "ch03-prepositioning.md.tmp.16888.1774216457479",
+    "ch01-triage.md.tmp.16888.1774216455288",
+    "ch02-go-bag.md.tmp.16888.1774216453556",
+    "how-to-help.md",
+    "acknowledgments.md",
+    "about-the-author.md",
+    "ch03-prepositioning.md",
+    "ch02-go-bag.md",
+    "ch01-triage.md",
+    "ch00-prevention.md",
+    "appendix-b-resources.md",
+    "appendix-a-legal-rights.md",
+    "99-back-matter.md",
+    "00-front-matter.md",
+    "ch24-water-power-heat.md",
+    "ch23-survival-kit.md",
+    "ch22-phone-tool.md",
+    "ch35-resilience.md",
+    "ch21-phone-alive.md",
+    "ch20-populations.md",
+    "ch34-traps.md",
+    "ch33-identity.md",
+    "ch19-violence.md",
+    "ch32-your-brain.md",
+    "ch18-mental-health.md",
+    "ch31-legal-landscapes.md",
+    "ch30-climate-zones.md",
+    "ch17-physical-health.md"
+  ]
+}

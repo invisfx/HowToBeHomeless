@@ -1,0 +1,66 @@
+# Chapter 31: Legal Landscapes {#ch31}
+
+*The laws that govern your existence vary wildly by state and city. Know the rules where you are.*
+
+The legal landscape of homelessness in America is a patchwork of contradictions. In one city, sleeping in a public park is a constitutionally protected activity. Twenty miles away, the same act is a misdemeanor that carries a fine you cannot pay and a warrant that follows you for years. Understanding the legal environment where you are is not optional. It is the difference between a citation and a clean record, between a shelter bed and a jail cell, between accessing benefits and being disqualified from them.
+
+The Supreme Court's 2024 decision in *City of Grants Pass v. Johnson* fundamentally changed the legal landscape for homeless Americans. Before Grants Pass, the Ninth Circuit's *Martin v. Boise* ruling held that cities could not criminalize sleeping outside if they did not have enough shelter beds. That protection is gone. Cities across the country are now free to enforce camping bans regardless of shelter capacity.
+
+This chapter maps the post-Grants Pass enforcement landscape, identifies jurisdictions that still offer legal protections, and explains the benefit eligibility differences that make where you are almost as important as who you are. The law is not on your side. But knowing the law is better than not knowing it.
+
+None of this is legal advice. If you need legal help, contact your local legal aid organization, the National Law Center on Homelessness & Poverty, or the ACLU. Many provide free representation to homeless individuals.
+
+## Post-Grants Pass: The Enforcement Map
+
+Since the Grants Pass decision, cities across the country have moved at different speeds to enforce camping bans. The enforcement map is not uniform. Some cities have aggressively expanded enforcement. Others have held back, either because of local political will or because they recognize that enforcement without alternatives simply shuffles people from one location to another.
+
+### Where Camping Bans Are Aggressive
+
+Cities that were previously restrained by the Ninth Circuit's protections have been the fastest to act. Phoenix, Portland, Sacramento, Los Angeles, and San Francisco have all expanded enforcement operations. Many use a pattern of posted notice, followed by a sweep within forty-eight to seventy-two hours. Some cities offer shelter referrals during sweeps. Others do not. Knowing your city's specific enforcement pattern is essential for avoiding property loss and criminal charges.
+
+The practical impact is significant. If you are camping in a city with aggressive enforcement, you need a backup plan for where to go when your spot is swept. You need to keep your most important possessions on your person at all times. And you need to understand that a camping citation is not just a fine --- it is a record that can follow you into housing applications, employment background checks, and benefit eligibility determinations.
+
+## Right-to-Shelter Jurisdictions
+
+A small number of jurisdictions maintain a legal right to shelter. New York City is the most well-known, operating under a consent decree that requires the city to provide shelter to anyone who requests it. Massachusetts has a similar right-to-shelter law, though it has been modified in recent years. Washington, D.C. has a seasonal right-to-shelter that activates during hypothermia season.
+
+If you are in a right-to-shelter jurisdiction, understand what that right actually guarantees. It guarantees a bed. It does not guarantee a safe bed, a clean bed, or a bed near your job or your children's school. The right to shelter is a floor, not a ceiling. But it is a floor that does not exist in most of the country.
+
+## Panhandling Laws
+
+The First Amendment protects panhandling as a form of speech in many jurisdictions. Federal courts have struck down blanket panhandling bans in numerous cities. However, many cities have found workarounds: banning "aggressive" panhandling, prohibiting solicitation near ATMs or transit stops, or creating pedestrian interference ordinances that effectively criminalize the act without naming it.
+
+The legal landscape on panhandling is highly local. In some cities, you can hold a sign on a median strip without legal consequence. In others, the same act results in a citation. Before you panhandle, research your local ordinances. The [panhandling chapter](#ch15) covers the behavioral strategies. This section covers the legal framework that determines where those strategies are permissible.
+
+### States Where Panhandling Is Protected Speech
+
+Federal court decisions have struck down panhandling bans in Illinois, Michigan, Maine, and several other states. However, these protections are constantly being tested by new ordinances. Check current local law before relying on a court decision from three years ago.
+
+## Benefit Eligibility Differences by State
+
+The benefits available to you depend enormously on where you are. Medicaid expansion, General Assistance programs, SNAP benefit levels, and housing program availability all vary by state. Some key differences:
+
+- **Medicaid expansion:** States that expanded Medicaid under the ACA cover adults with incomes up to 138% of the federal poverty level. In non-expansion states, childless adults may have no pathway to Medicaid regardless of income.
+- **General Assistance:** Some states provide cash assistance to single adults who do not qualify for other programs. Others provide nothing. The amounts and eligibility criteria vary widely.
+- **SNAP benefits:** Benefit levels are federally set, but states have discretion on administrative barriers, work requirements, and application processes.
+- **Housing programs:** The availability and wait times for Section 8 vouchers, public housing, and rapid rehousing vary dramatically by local housing authority.
+
+## Sex Offender Registry Restrictions
+
+People on sex offender registries face some of the most severe barriers to housing of any population. Residency restrictions that prohibit living within a certain distance of schools, parks, or other locations can effectively make entire cities off-limits. Many shelters will not accept registered sex offenders. Some transitional housing programs are similarly restricted.
+
+This creates a cruel paradox: the people with the most legal restrictions on where they can live are often the ones with the fewest housing options. If you are on the registry, contact a legal aid organization that specializes in sex offender housing issues. Some exist specifically to help navigate these restrictions. The legal landscape is harsh but not hopeless, and understanding the specific restrictions in your jurisdiction can reveal options that are not immediately obvious.
+
+> **&#9888; Warning**
+> A camping citation is not "just a ticket." Unpaid fines become warrants. Warrants become arrests. Arrests become records. Records close doors to housing, employment, and benefits. If you receive a citation, do not ignore it. Show up to court. Many jurisdictions have community service alternatives or fine reduction programs for people experiencing homelessness. Ignoring the citation is the worst possible strategy.
+
+> **&#10004; Practical Tip**
+> The National Law Center on Homelessness & Poverty maintains a database of local laws affecting homeless people. Your local legal aid organization can tell you exactly what is and is not legal in your jurisdiction. Many legal aid organizations have specific programs for homeless clients. These services are free. Use them.
+
+**Key Takeaways**
+
+- **Grants Pass changed everything.** Cities can now enforce camping bans regardless of shelter capacity. Know your city's enforcement pattern.
+- **Right-to-shelter exists in very few places.** NYC, Massachusetts, and D.C. (seasonal). If you are in one of these jurisdictions, understand what the right actually guarantees.
+- **Panhandling is protected speech in many jurisdictions,** but local ordinances create workarounds. Research your local laws.
+- **Benefits vary enormously by state.** Medicaid expansion, General Assistance, and housing program availability depend on where you are.
+- **Do not ignore citations.** Unpaid fines become warrants become records become closed doors.
