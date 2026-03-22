@@ -1,5 +1,5 @@
 {
-  "name": "howtobehomeless",
+  "name": "no-quarter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,16 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/invisfx/HowToBeHomeless.git"
+    "url": "git+https://github.com/invisfx/NoQuarter.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/invisfx/HowToBeHomeless/issues"
+    "url": "https://github.com/invisfx/NoQuarter/issues"
   },
-  "homepage": "https://github.com/invisfx/HowToBeHomeless#readme",
+  "homepage": "https://github.com/invisfx/NoQuarter#readme",
   "dependencies": {
     "docx": "^9.6.1",
     "puppeteer-core": "^24.40.0"
