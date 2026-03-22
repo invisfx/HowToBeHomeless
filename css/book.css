@@ -127,6 +127,7 @@ body {
   column-count: 2;
   column-gap: var(--col-gap);
   column-rule: 0.25pt solid var(--rule-light);
+  flex: 1;
 }
 
 /* Full-width elements that break out of columns */
@@ -239,6 +240,7 @@ body {
    ═══════════════════════════════════════════════════════════════ */
 .chapter-opener {
   padding-top: 0.8in;
+  flex: 1;
 }
 
 .chapter-opener .running-header {

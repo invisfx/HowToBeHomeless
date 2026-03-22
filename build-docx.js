@@ -539,7 +539,7 @@ async function buildDoc() {
   });
 
   const buffer = await Packer.toBuffer(doc);
-  const outputPath = path.join(__dirname, 'How_To_Be_Homeless.docx');
+  const outputPath = path.join(__dirname, 'No_Quarter.docx');
   fs.writeFileSync(outputPath, buffer);
   console.log(`Word document created: ${outputPath}`);
   console.log(`Size: ${(buffer.length / 1024).toFixed(0)} KB`);
