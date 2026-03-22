@@ -237,7 +237,7 @@ async function buildDoc() {
     new Paragraph({
       alignment: AlignmentType.CENTER,
       spacing: { after: 400 },
-      children: [new TextRun({ text: 'A Field Manual for Starting from Nothing', italics: true, font: 'Arial', size: 28, color: '666666' })]
+      children: [new TextRun({ text: 'A Survival Manual', italics: true, font: 'Arial', size: 28, color: '666666' })]
     }),
     new Paragraph({
       alignment: AlignmentType.CENTER,
@@ -522,7 +522,7 @@ async function buildDoc() {
         default: new Header({
           children: [new Paragraph({
             alignment: AlignmentType.CENTER,
-            children: [new TextRun({ text: 'No Quarter \u2014 A Field Manual for Starting from Nothing', font: 'Arial', size: 14, color: '999999' })]
+            children: [new TextRun({ text: 'No Quarter \u2014 A Survival Manual', font: 'Arial', size: 14, color: '999999' })]
           })]
         })
       },
