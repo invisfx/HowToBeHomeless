@@ -1,4 +1,4 @@
-# Chapter 25: Water, Power, and Heat {#ch25}
+# Chapter 26: Water, Power, and Heat {#ch26}
 
 *The three resources housed people take for granted that you now need to produce yourself.*
 

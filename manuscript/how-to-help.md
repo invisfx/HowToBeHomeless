@@ -31,4 +31,3 @@ Prices change. Programs end. Phone numbers go dead. If you find something wrong 
 ---
 
 *No Quarter — A Survival Manual*
-*Street soldiers fighting for their lives.*

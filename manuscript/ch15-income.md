@@ -1,4 +1,4 @@
-# Chapter 14: Income Without an Address {#ch14}
+# Chapter 15: Income Without an Address {#ch15}
 
 *Making money when you cannot put a home address on the application.*
 
@@ -48,7 +48,7 @@ Millions of Americans work full-time jobs while homeless. The Bureau of Labor St
 You need to look employed before you can be employed. This means clean clothes, grooming, and an address on your application. Solutions:
 
 - **Clothes:** Goodwill, Salvation Army, or church clothing closets for interview and work attire. Keep one set of clean work clothes separate from your daily wear.
-- **Grooming:** The gym membership from [Chapter 12: Water and Hygiene](#ch12) pays for itself here. Shower and shave before every shift.
+- **Grooming:** The gym membership from [Chapter 12: Water and Hygiene](#ch13) pays for itself here. Shower and shave before every shift.
 - **Address:** Use a shelter address, a friend's address, or a P.O. box. Some workforce development programs provide a mailing address specifically for job applications.
 
 ## Day 1 Income Sources

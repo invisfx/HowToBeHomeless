@@ -1,4 +1,4 @@
-# Chapter 19: Mental Health {#ch19}
+# Chapter 20: Mental Health {#ch20}
 
 *The psychological architecture of homelessness, and how to keep your mind from turning against you.*
 

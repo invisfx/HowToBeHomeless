@@ -1,4 +1,4 @@
-# Chapter 24: The Survival Kit {#ch24}
+# Chapter 25: The Survival Kit {#ch25}
 
 *A prioritized, budget-conscious gear list organized by tier.*
 

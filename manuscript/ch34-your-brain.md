@@ -1,4 +1,4 @@
-# Chapter 33: What Homelessness Does to Your Brain {#ch33}
+# Chapter 34: What Homelessness Does to Your Brain {#ch34}
 
 *The neuroscience and cognitive science of poverty, scarcity, and chronic stress.*
 
@@ -119,7 +119,7 @@ Here is the complete list of cognitive compensations discussed in this chapter, 
 - Do the thing first, process the feelings later. Shame wants you to stop and reflect before acting. That reflection is the trap. Act first.
 - Bring your documents. Being prepared reduces the feeling of being at someone's mercy. You are a person conducting business, not a supplicant.
 
-For mindfulness and meditation techniques that directly counteract these brain changes, see [Chapter 34: Mindfulness](#ch34).
+For mindfulness and meditation techniques that directly counteract these brain changes, see [Chapter 34: Mindfulness](#ch35).
 
 **Key Takeaways**
 

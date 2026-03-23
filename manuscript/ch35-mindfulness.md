@@ -1,4 +1,4 @@
-# Chapter 34: Mindfulness {#ch34}
+# Chapter 35: Mindfulness {#ch35}
 
 *Free tools that rewire your brain under stress.*
 

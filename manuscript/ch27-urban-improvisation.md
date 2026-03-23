@@ -1,4 +1,4 @@
-# Chapter 26: Urban Improvisation {#ch26}
+# Chapter 27: Urban Improvisation {#ch27}
 
 *Making gear from what cities throw away.*
 

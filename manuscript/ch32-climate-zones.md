@@ -1,4 +1,4 @@
-# Chapter 31: Climate Zones {#ch31}
+# Chapter 32: Climate Zones {#ch32}
 
 *Homelessness is different everywhere. These profiles cover the survival variables that change by geography.*
 

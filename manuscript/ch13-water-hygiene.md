@@ -1,4 +1,4 @@
-# Chapter 12: Water and Hygiene {#ch12}
+# Chapter 13: Water and Hygiene {#ch13}
 
 *Staying clean is staying functional. Hygiene is infrastructure, not vanity.*
 

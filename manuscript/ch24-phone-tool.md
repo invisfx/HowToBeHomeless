@@ -1,4 +1,4 @@
-# Chapter 23: Your Phone as Survival Tool {#ch23}
+# Chapter 24: Your Phone as Survival Tool {#ch24}
 
 *Essential apps, staying connected, job searching, and protecting your digital life.*
 

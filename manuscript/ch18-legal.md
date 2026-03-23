@@ -1,4 +1,4 @@
-# Chapter 17: Legal Survival {#ch17}
+# Chapter 18: Legal Survival {#ch18}
 
 *Your rights, the criminalization cycle, and keeping a clean record when the system is designed to give you one.*
 

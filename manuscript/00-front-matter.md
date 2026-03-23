@@ -8,7 +8,6 @@
 
 **by Doug Addy**
 
-*Street soldiers fighting for their lives.*
 
 :::
 

@@ -1,4 +1,4 @@
-# Chapter 36: The Psychological Traps {#ch36}
+# Chapter 37: The Psychological Traps {#ch37}
 
 *Predictable patterns that keep people stuck. Named so you can see them coming.*
 

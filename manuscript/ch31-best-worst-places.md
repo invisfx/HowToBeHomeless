@@ -1,4 +1,4 @@
-# Chapter 30: The Best and Worst Places {#ch30}
+# Chapter 31: The Best and Worst Places {#ch31}
 
 *Where to go if you have a choice --- and where to avoid.*
 

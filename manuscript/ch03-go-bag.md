@@ -91,7 +91,7 @@ Turn off Bluetooth, Wi-Fi, and location when not in use. Screen brightness to mi
 
 Libraries, coffee shops ($1 coffee buys you an outlet), day centers, hospital waiting rooms, airport terminals, some parks and bus stations have USB outlets.
 
-*Deep dive: [Ch22: Keeping Your Phone Alive](#ch22) and [Ch23: Your Phone as a Survival Tool](#ch23).*
+*Deep dive: [Ch22: Keeping Your Phone Alive](#ch23) and [Ch23: Your Phone as a Survival Tool](#ch24).*
 
 ## Priority 3: Medications + First Aid
 
@@ -124,7 +124,7 @@ You will get blisters, cuts, headaches, and stomach problems. Minor injuries bec
 > **⚠ Hydration Warning**
 > Dehydration impairs your thinking before you feel thirsty. By the time you notice, your decision-making is already compromised. Drink water every hour. In heat above 90°F, you need 8+ bottles per day. Signs of dehydration: dark urine, headache, dizziness, confusion. If someone is confused and has not been drinking water, get them fluids immediately. Electrolytes matter — water alone is not enough if you are sweating heavily. Salt packets from fast food restaurants are free and work in a pinch.
 
-*Deep dive: [Ch18: Physical Health](#ch18) covers FQHCs, ERs, managing chronic conditions, and foot care.*
+*Deep dive: [Ch18: Physical Health](#ch19) covers FQHCs, ERs, managing chronic conditions, and foot care.*
 
 ## Priority 4: Cash + Financial Tools
 
@@ -144,7 +144,7 @@ You will get blisters, cuts, headaches, and stomach problems. Minor injuries bec
 - **Walmart MoneyCard:** Prepaid debit. Buy in-store for $1. Load cash at any register.
 - **Walmart check cashing:** $4 flat fee for checks up to $1,000. No bank account needed.
 
-*Deep dive: [Ch2: Triage](#ch02) covers exit cash targets ($1,500–$3,000), benefit asset limits, and retirement account access. [Ch14: Income](#ch14) covers earning money while homeless.*
+*Deep dive: [Ch2: Triage](#ch02) covers exit cash targets ($1,500–$3,000), benefit asset limits, and retirement account access. [Ch14: Income](#ch15) covers earning money while homeless.*
 
 ## Priority 5: Clothing System
 
@@ -184,7 +184,7 @@ You lose significant heat through your head. Wool or fleece beanie: $2–$5 at a
 - 1 pair glove liners
 - Broken-in waterproof boots (wear these, do not pack them)
 
-*Deep dive: [Ch24: Survival Kit](#ch24) covers full tiered gear lists. [Ch31: Climate Zones](#ch31) covers regional clothing adjustments.*
+*Deep dive: [Ch24: Survival Kit](#ch25) covers full tiered gear lists. [Ch31: Climate Zones](#ch32) covers regional clothing adjustments.*
 
 ## Priority 6: Sleeping Gear
 
@@ -218,7 +218,7 @@ Learn all three at [animatedknots.com](https://www.animatedknots.com) — free s
 
 $1 at the dollar store. Reflects 90% of body heat back to you. Loud and not durable, but weighs nothing. Wrap one around your sleeping bag on cold nights for a significant temperature boost. Keep 2–3 in your bag at all times. They also work as a rain poncho, ground cloth, or signal mirror in an emergency.
 
-*Deep dive: [Ch13: Sleep](#ch13) covers safe sleeping strategies and locations. [Ch9: Sleeping Outside](#ch09) covers camp setup, site selection, and sweep survival.*
+*Deep dive: [Ch13: Sleep](#ch14) covers safe sleeping strategies and locations. [Ch9: Sleeping Outside](#ch09) covers camp setup, site selection, and sweep survival.*
 
 ## Priority 7: Water + Food
 
@@ -233,14 +233,14 @@ $1 at the dollar store. Reflects 90% of body heat back to you. Loud and not dura
 - **Peanut butter** — 190 cal/serving, $2. Protein, fat, shelf-stable. Eat with a spoon or on crackers.
 - **Granola bars** — $3–$5 for a box of 6–8. Compact, calorie-dense.
 - **Trail mix / mixed nuts** — $3–$5. High calorie, high protein.
-- **Beef jerky** — $8–$15 per bag. Expensive but protein-dense, salt, shelf-stable for months. Buy in bulk at Costco or Walmart for better value, or make your own with a car dashboard on a hot day (see [Chapter 25](#ch25)).
+- **Beef jerky** — $8–$15 per bag. Expensive but protein-dense, salt, shelf-stable for months. Buy in bulk at Costco or Walmart for better value, or make your own with a car dashboard on a hot day (see [Chapter 25](#ch26)).
 - **Crackers** — Individually wrapped, $2–$3. Pair with peanut butter.
 - **Canned goods:** Tuna, chicken, beans, ravioli. $1–$2 each. Heavy but calorie-dense. Carry a P-38 can opener (see Tools).
 - **Instant oatmeal packets** — $3 for 10. Add hot water from any gas station coffee dispenser.
 
 Rotate these. Do not let them expire in your bag. When you eat one, replace it.
 
-*Deep dive: [Ch11: Food](#ch11) covers food banks, SNAP, $20/week grocery lists, and free food sources. [Ch25: Water, Power, and Heat](#ch25) covers purification methods and cooking without a kitchen.*
+*Deep dive: [Ch11: Food](#ch11) covers food banks, SNAP, $20/week grocery lists, and free food sources. [Ch25: Water, Power, and Heat](#ch26) covers purification methods and cooking without a kitchen.*
 
 ## Priority 8: Tools + Gear
 
@@ -257,7 +257,7 @@ Rotate these. Do not let them expire in your bag. When you eat one, replace it.
 - **Paracord, 50 feet ($4–$6):** Tarp lines, clotheslines, gear lashing, boot lace replacement. 550-lb test. Cut to length as needed.
 - **Sewing needle + dental floss ($2 total):** Dental floss is stronger than thread. Repairs sleeping bags, jackets, bags, and clothing. A heavy-duty needle and 20 feet of floss weigh nothing and save gear that would otherwise be trashed.
 
-*Deep dive: [Ch24: Survival Kit](#ch24) covers tiered gear lists ($0–$150+). [Ch26: Urban Improvisation](#ch26) covers DIY solutions when you cannot buy gear.*
+*Deep dive: [Ch24: Survival Kit](#ch25) covers tiered gear lists ($0–$150+). [Ch26: Urban Improvisation](#ch27) covers DIY solutions when you cannot buy gear.*
 
 ## Priority 9: Self-Defense
 
@@ -281,7 +281,7 @@ Rotate these. Do not let them expire in your bag. When you eat one, replace it.
 
 Situational awareness beats every weapon. Head up. Earbuds out. Know your exits. Travel in well-lit areas. Sleep near other people. Trust your gut — if something feels wrong, leave. De-escalation saves lives. Compliance during a robbery saves lives. Your wallet is not worth a stabbing.
 
-*Deep dive: [Ch20: Violence and Predation](#ch20) covers threat assessment, de-escalation scripts, sleep safety, and sexual violence resources.*
+*Deep dive: [Ch20: Violence and Predation](#ch21) covers threat assessment, de-escalation scripts, sleep safety, and sexual violence resources.*
 
 ## Priority 10: Hygiene
 
@@ -314,7 +314,7 @@ Dollar Tree or Walmart — either works. Dollar Tree is $1.25 per item across th
 
 Maintain 2 outfits and rotate. Wear one, wash the other. Laundromat: $2–$4 per load. Sink washing with Dr. Bronner’s soap works for underwear, socks, and base layers — wring out, hang to dry overnight.
 
-*Deep dive: [Ch12: Water and Hygiene](#ch12) covers shower strategies, dental care, foot care, and creative hygiene hacks.*
+*Deep dive: [Ch12: Water and Hygiene](#ch13) covers shower strategies, dental care, foot care, and creative hygiene hacks.*
 
 ## Priority 11: The Dignity Layer
 
@@ -331,7 +331,7 @@ Maintain 2 outfits and rotate. Wear one, wash the other. Laundromat: $2–$4 per
 > **▶ Why Dignity Matters**
 > Research consistently shows that people who maintain personal appearance and daily routines exit homelessness faster. This is not about vanity. Looking presentable opens doors: employers hire you, landlords approve you, service providers take you seriously, and strangers treat you like a person. The moment you stop caring about how you look is the moment the street starts winning.
 
-*Deep dive: [Ch35: Identity](#ch35) covers maintaining your sense of self. [Ch14: Income](#ch14) covers hiding homelessness at work and interview prep.*
+*Deep dive: [Ch35: Identity](#ch36) covers maintaining your sense of self. [Ch14: Income](#ch15) covers hiding homelessness at work and interview prep.*
 
 > **⚠ The Weight Rule: 20–30 Pounds Maximum**
 > Military soldiers carry 60–100 lbs, but they are trained for it and have unit support. You are carrying your bag alone, all day, with no break. Over 30 lbs, you get shoulder and back pain within hours, blisters on your feet within days, and you start abandoning gear within a week. Weigh your packed bag on a bathroom scale before you leave. If it is over 30 lbs, take something out.

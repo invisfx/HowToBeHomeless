@@ -1,4 +1,4 @@
-# Chapter 32: Legal Landscapes {#ch32}
+# Chapter 33: Legal Landscapes {#ch33}
 
 *The laws that govern your existence vary wildly by state and city. Know the rules where you are.*
 
@@ -30,7 +30,7 @@ If you are in a right-to-shelter jurisdiction, understand what that right actual
 
 The First Amendment protects panhandling as a form of speech in many jurisdictions. Federal courts have struck down blanket panhandling bans in numerous cities. However, many cities have found workarounds: banning "aggressive" panhandling, prohibiting solicitation near ATMs or transit stops, or creating pedestrian interference ordinances that effectively criminalize the act without naming it.
 
-The legal landscape on panhandling is highly local. In some cities, you can hold a sign on a median strip without legal consequence. In others, the same act results in a citation. Before you panhandle, research your local ordinances. The [panhandling chapter](#ch16) covers the behavioral strategies. This section covers the legal framework that determines where those strategies are permissible.
+The legal landscape on panhandling is highly local. In some cities, you can hold a sign on a median strip without legal consequence. In others, the same act results in a citation. Before you panhandle, research your local ordinances. The [panhandling chapter](#ch17) covers the behavioral strategies. This section covers the legal framework that determines where those strategies are permissible.
 
 ### States Where Panhandling Is Protected Speech
 

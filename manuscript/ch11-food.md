@@ -73,7 +73,7 @@ SNAP (Supplemental Nutrition Assistance Program) puts $200 to $300 per month on 
 
 ### What You Need to Apply
 
-- **ID.** Driver's license, state ID, or any government-issued photo ID. If you have lost yours, see [Chapter 17](#ch17) (p. 187) for replacement steps.
+- **ID.** Driver's license, state ID, or any government-issued photo ID. If you have lost yours, see [Chapter 17](#ch18) (p. 187) for replacement steps.
 - **Social Security number.** You need to know it. You do not always need the physical card, but it helps.
 - **Proof of income or no income.** If you have no income, you say so. A written statement is usually sufficient. If you have any income, bring pay stubs or a letter from your employer.
 - **Proof of housing costs.** If homeless, state that you are homeless. You do not need a lease or utility bill.

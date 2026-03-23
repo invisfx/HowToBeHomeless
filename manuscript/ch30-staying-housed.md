@@ -1,4 +1,4 @@
-# Chapter 29: Staying Housed {#ch29}
+# Chapter 30: Staying Housed {#ch30}
 
 *Most people who exit homelessness return within two years. This chapter is about breaking that cycle.*
 
@@ -75,7 +75,7 @@ A single crisis put you on the street the first time. The goal now is to build e
 - **Stage 2: One month's rent.** If you lose your job, one month's rent buys you 30 days to find another one before you miss a payment. This is the buffer between a setback and a crisis.
 - **Stage 3: Three months' expenses.** Rent, utilities, food, transportation for three months. This is the buffer between a crisis and a collapse. Very few single events can overwhelm a three-month cushion.
 
-The strategies from [Chapter 27: Prioritizing the Exit](#ch27) still apply. Separate your savings from your spending money. Automate small transfers if you have direct deposit. Use every free resource available to reduce expenses. Food banks do not check whether you have an apartment. Free clinics do not check your income after you are housed. Keep using them.
+The strategies from [Chapter 27: Prioritizing the Exit](#ch28) still apply. Separate your savings from your spending money. Automate small transfers if you have direct deposit. Use every free resource available to reduce expenses. Food banks do not check whether you have an apartment. Free clinics do not check your income after you are housed. Keep using them.
 
 ## Credit Rebuilding: The Step-by-Step
 

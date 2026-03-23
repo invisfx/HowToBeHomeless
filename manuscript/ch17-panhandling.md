@@ -1,4 +1,4 @@
-# Chapter 16: Panhandling and the Psychology of the Ask {#ch16}
+# Chapter 17: Panhandling and the Psychology of the Ask {#ch17}
 
 *The most stigmatized income source, broken down as a skill with real behavioral psychology behind it.*
 
@@ -83,7 +83,7 @@ Panhandling is protected speech under the First Amendment. Federal courts have s
 - **Buffer zones** exist in many cities. Common restrictions: no solicitation within 20 to 50 feet of ATMs, bus stops, building entrances, or school zones. Violating a buffer zone ordinance results in a citation, not arrest, in most cases.
 - **After the Grants Pass decision (2024):** The Supreme Court ruled cities can enforce anti-camping and anti-sleeping ordinances even when shelter beds are unavailable. This has emboldened some cities to also increase enforcement of panhandling ordinances. The legal landscape is shifting. Know your city's current rules.
 
-The practical rule: be passive, be polite, stay out of buffer zones, and move when asked by police. A citation for panhandling can cascade into the same warrant-arrest-record cycle described in [Chapter 17: Legal Survival](#ch17). No amount of money from panhandling is worth a criminal record.
+The practical rule: be passive, be polite, stay out of buffer zones, and move when asked by police. A citation for panhandling can cascade into the same warrant-arrest-record cycle described in [Chapter 17: Legal Survival](#ch18). No amount of money from panhandling is worth a criminal record.
 
 ## Safety While Stationary
 

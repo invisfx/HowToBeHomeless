@@ -1,4 +1,4 @@
-# Chapter 21: Population-Specific Risks {#ch21}
+# Chapter 22: Population-Specific Risks {#ch22}
 
 *Different bodies, different dangers, different resources. What you need to know based on who you are.*
 

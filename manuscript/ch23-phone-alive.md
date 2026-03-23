@@ -1,4 +1,4 @@
-# Chapter 22: Keeping Your Phone Alive {#ch22}
+# Chapter 23: Keeping Your Phone Alive {#ch23}
 
 *Free plans, charging infrastructure, battery triage, and what to do when it is lost or stolen.*
 

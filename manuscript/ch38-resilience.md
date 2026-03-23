@@ -1,4 +1,4 @@
-# Chapter 37: The Resilience Playbook {#ch37}
+# Chapter 38: The Resilience Playbook {#ch38}
 
 *What the research says about who survives and who exits --- and what you can actually do about it.*
 

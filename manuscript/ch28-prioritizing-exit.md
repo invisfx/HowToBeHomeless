@@ -1,4 +1,4 @@
-# Chapter 27: Prioritizing the Exit {#ch27}
+# Chapter 28: Prioritizing the Exit {#ch28}
 
 *Rapid rehousing, Housing First, waitlists, and saving money while you have almost none.*
 

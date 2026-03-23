@@ -1,4 +1,4 @@
-# Chapter 28: Getting Back into Housing {#ch28}
+# Chapter 29: Getting Back into Housing {#ch29}
 
 *Renting with gaps, landlord conversations, deposits, and roommates.*
 
