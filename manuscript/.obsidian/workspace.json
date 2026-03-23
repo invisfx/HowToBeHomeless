@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ch05-night-one.md",
+                "file": "ch12-hunger.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ch05-night-one"
+              "title": "ch12-hunger"
             }
           }
         ]
@@ -185,18 +185,23 @@
   },
   "active": "b40b82431f846b5d",
   "lastOpenFiles": [
-    "ch12-hunger.md",
-    "ch12-hunger.md.tmp.38048.1774232378378",
-    "sed8beTav",
-    "sedaQfqAb",
-    "sedYbD2EX",
-    "sed0g1VkO",
-    "sedgxsTJ3",
-    "sedlfZoBz",
-    "sedSHoyG7",
-    "sedrBLIaR",
-    "sed8XJCkG",
+    "media-c03e725af00370bc/input.pdf",
+    "media-c03e725af00370bc/input.toc",
+    "media-c03e725af00370bc/input.aux",
+    "media-c03e725af00370bc/input.log",
+    "media-c03e725af00370bc/input.tex",
+    "media-c03e725af00370bc",
+    "section-3.md",
+    "section-3.md.tmp.38048.1774234645632",
+    "section-2.md",
+    "section-2.md.tmp.38048.1774234645067",
+    "section-1.md",
+    "section-1.md.tmp.38048.1774234644739",
+    "ch12-hunger.md.tmp.38048.1774234332791",
+    "ch12-hunger.md.tmp.38048.1774233947370",
     "ch11-food.md",
+    "ch05-night-one.md",
+    "ch12-hunger.md",
     "ch13-water-hygiene.md",
     "ch14-sleep.md",
     "ch15-income.md",
@@ -215,11 +220,6 @@
     "ch28-prioritizing-exit.md",
     "ch29-getting-housed.md",
     "ch30-staying-housed.md",
-    "ch31-best-worst-places.md",
-    "ch32-climate-zones.md",
-    "ch33-legal-landscapes.md",
-    "ch34-your-brain.md",
-    "ch35-mindfulness.md",
-    "ch36-identity.md"
+    "ch31-best-worst-places.md"
   ]
 }

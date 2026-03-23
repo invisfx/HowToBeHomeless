@@ -166,6 +166,18 @@ Without a fridge, food safety rules change. The danger zone for bacteria is 40 t
 
 Food poisoning without access to a bathroom or medical care is a genuine emergency. It causes dehydration, weakness, and inability to function — exactly what you cannot afford. When in doubt, throw it out. Hungry is survivable. Food poisoning on the street is dangerous.
 
+## Calorie-Dense Foods Ranked by Cost
+
+When you do have money for food, spend it on the highest calorie-per-dollar options. This is not about eating well in the nutritional sense. This is about raw survival calories when your budget is approaching zero.
+
+- **Peanut butter** is the single best survival food in an American grocery store. A jar costs roughly $3 and contains approximately 2,600 calories — 190 per two-tablespoon serving, with fat, protein, and carbs for sustained energy. No refrigeration, no cooking. Eat it from the jar with a finger if necessary. One jar plus a loaf of bread ($1, roughly 1,200 calories) gives you roughly 3,800 calories for $4 — close to two full days of survival nutrition.
+- **Dry rice** provides roughly 200 calories per uncooked cup. A 5-lb bag costs about $3 and contains roughly 36 cups — 7,200 calories for $3. Requires cooking (heat source + pot). If you have a camp stove or kitchen access, rice is the cheapest calorie source available. If you do not, it is useless.
+- **Dried beans** provide roughly 350 calories per uncooked cup. A 2-lb bag costs about $2 and contains roughly 5 cups — 1,750 calories for $2. Requires cooking and soak time (overnight, or boil 2 minutes and let sit 1 hour). Combined with rice, beans create a complete protein.
+- **Oatmeal** provides roughly 150 calories per instant packet or per half-cup of bulk oats. A box of 10 instant packets costs roughly $3 (1,500 calories). Bulk oats are cheaper — about $2 for a canister with roughly 2,400 calories. Instant oatmeal only needs hot water from a gas station or shelter.
+- **Ramen noodles** provide approximately 380 calories per packet at roughly $0.25. One of the highest calorie-per-dollar ratios in any grocery store. Nutritional profile is poor — mostly refined carbs, sodium, and a small amount of fat — but when the question is survival calories, ramen delivers. Eat dry as a crunchy snack or prepare with hot water. Ten packets cost $2.50 and provide 3,800 calories.
+- **Bananas** cost roughly $0.25 each and provide about 100 calories. One of the cheapest sources of potassium available. No preparation needed. Spoil within a few days, so buy only what you will eat in the next day or two.
+- **Eggs** provide roughly 70 calories each at about $0.25 per egg (varies by location and market). Require cooking to be safe. If you have a camp stove or microwave access (libraries, some gas stations), eggs provide the cheapest per-calorie source of complete protein available. Hard-boiled eggs keep about a week without refrigeration in cool weather.
+
 **Key Takeaways**
 
 - **Call 211 first.** It connects you to every food resource in your area.
